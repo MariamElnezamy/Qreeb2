@@ -9,5 +9,9 @@ target 'Qreeb' do
 
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'Firebase/Analytics'
+pod 'Firebase/Messaging'
+pod 'Firebase/Core'
+
 
 end

@@ -17,6 +17,7 @@
 		84188E1822E9398A004C4118 /* Border&CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84188E1722E9398A004C4118 /* Border&CornerRadius.swift */; };
 		84188E1A22E94285004C4118 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84188E1922E94285004C4118 /* WalkthroughPageViewController.swift */; };
 		84188E1C22E947A7004C4118 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84188E1B22E947A7004C4118 /* WalkthroughContentViewController.swift */; };
+		84269B1B233BCC5A00A100F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84269B1A233BCC5900A100F9 /* GoogleService-Info.plist */; };
 		8427C048231A3FB900B3A03D /* howToBeDeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C047231A3FB900B3A03D /* howToBeDeliveryVC.swift */; };
 		8427C04A231A42B400B3A03D /* contactInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C049231A42B400B3A03D /* contactInfoVC.swift */; };
 		843A09FC230E1D5000187D61 /* OrderNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A09FB230E1D5000187D61 /* OrderNowVC.swift */; };
@@ -70,8 +71,10 @@
 		84188E1722E9398A004C4118 /* Border&CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Border&CornerRadius.swift"; sourceTree = "<group>"; };
 		84188E1922E94285004C4118 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		84188E1B22E947A7004C4118 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		84269B1A233BCC5900A100F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8427C047231A3FB900B3A03D /* howToBeDeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howToBeDeliveryVC.swift; sourceTree = "<group>"; };
 		8427C049231A42B400B3A03D /* contactInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactInfoVC.swift; sourceTree = "<group>"; };
+		8434C2CE2336C68C00CA8BF4 /* Qreeb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qreeb.entitlements; sourceTree = "<group>"; };
 		843A09FB230E1D5000187D61 /* OrderNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNowVC.swift; sourceTree = "<group>"; };
 		843B28EA22FBF7CC0072C045 /* notificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationTableViewCell.swift; sourceTree = "<group>"; };
 		843B28EE22FC44A40072C045 /* RegisterVCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterVCs.swift; path = /Users/admin/Documents/Qreeb/Qreeb/RegisterVCs.swift; sourceTree = "<absolute>"; };
@@ -132,6 +135,7 @@
 		84188DF922E92B0B004C4118 = {
 			isa = PBXGroup;
 			children = (
+				84269B1A233BCC5900A100F9 /* GoogleService-Info.plist */,
 				84188E0422E92B0B004C4118 /* Qreeb */,
 				84188E0322E92B0B004C4118 /* Products */,
 				E6C16CAA3E6A69B63C4795EC /* Pods */,
@@ -150,6 +154,7 @@
 		84188E0422E92B0B004C4118 /* Qreeb */ = {
 			isa = PBXGroup;
 			children = (
+				8434C2CE2336C68C00CA8BF4 /* Qreeb.entitlements */,
 				84188E0522E92B0B004C4118 /* AppDelegate.swift */,
 				845B9F65231E8EB800042705 /* helper.swift */,
 				8440B0FA232416EE004502D3 /* Model */,
@@ -316,6 +321,14 @@
 				TargetAttributes = {
 					84188E0122E92B0B004C4118 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -348,6 +361,7 @@
 				84188E0D22E92B0F004C4118 /* Assets.xcassets in Resources */,
 				84FFB98C23079CD700701215 /* Amin Font Bold.otf in Resources */,
 				84188E0B22E92B0B004C4118 /* Main.storyboard in Resources */,
+				84269B1B233BCC5A00A100F9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,16 +599,19 @@
 			baseConfigurationReference = 04B159B755378D786F64C3AD /* Pods-Qreeb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: mariamelnezamy555@gmail.com (7QRQ7848AR)";
+				CODE_SIGN_ENTITLEMENTS = Qreeb/Qreeb.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ibrahim Alokeal (5N6UZ9FVXF)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Ibrahim Alokeal (5N6UZ9FVXF)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3755RMP4JU;
+				DEVELOPMENT_TEAM = 5WWWTKL2B3;
 				INFOPLIST_FILE = Qreeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mariamelnezamy.Qreeb;
+				PRODUCT_BUNDLE_IDENTIFIER = Qreeb.mariamelnezamy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Qreeb Provisioning Profile";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,14 +622,15 @@
 			baseConfigurationReference = 219E2D60ABBF437D6948FB12 /* Pods-Qreeb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Qreeb/Qreeb.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3755RMP4JU;
+				DEVELOPMENT_TEAM = 5WWWTKL2B3;
 				INFOPLIST_FILE = Qreeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mariamelnezamy.Qreeb;
+				PRODUCT_BUNDLE_IDENTIFIER = Qreeb.mariamelnezamy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

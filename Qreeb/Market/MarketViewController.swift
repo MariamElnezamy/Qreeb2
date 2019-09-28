@@ -21,17 +21,17 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
     var txt:[String] = ["خصم 25% على جميع المشتريات لفترة محدودة","خصم 10% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة","خصم 30% على جميع المشتريات لفترة محدودة","خصم 40% على جميع المشتريات لفترة محدودة","خصم 13% على جميع المشتريات لفترة محدودة","خصم 30% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة","خصم 25% على جميع المشتريات لفترة محدودة"]
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return txt.count
+        return tasks.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MarketCollectionViewCell
         
         cell.img.image=UIImage(named: "Group 376-1")
-        cell.title.text=marketTitle1[indexPath.row]
+        cell.title.text=tasks[indexPath.row].title
         cell.txtKG.text="40KG"
-        cell.address.text=marketTxt1[indexPath.row]
-        cell.txt.text=txt[indexPath.row]
+       // cell.address.text=tasks[indexPath.row].
+        cell.txt.text=tasks[indexPath.row].txt
         return cell 
     }
         
@@ -151,7 +151,7 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == tabelView1 {
-            return marketTitle1.count
+            return tasks.count
         }else if tableView == tabelView2 {
             return marketTitle2.count
         }else {
@@ -160,35 +160,33 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell1 = tabelView1.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell1
-        let cell2 = tabelView2.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell2
-
-        cell1.img1.image=UIImage(named: "Group 376-1")
-        
-        //        cell1.title1.text=tasks[indexPath.row]
-        //        cell1.txt1.text=tasks[indexPath.row]
-        //        cell1.txtKG.text=tasks[indexPath.row]
-        
-        cell1.title1.text=marketTitle1[indexPath.row]
-        cell1.txt1.text=marketTxt1[indexPath.row]
-        cell1.txtKG.text=txtKG1[indexPath.row]
-        
-        cell2.img2.image=UIImage(named: "Group 376-1")
-        cell2.title2.text=marketTitle2[indexPath.row]
-        cell2.txt2.text=marketTxt2[indexPath.row]
-        cell2.txtKG.text=txtKG2[indexPath.row]
         
         if tableView == tabelView1 {
+            let cell1 = tabelView1.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell1
+            cell1.img1.image=UIImage(named: "Group 376-1")
+            cell1.title1.text=tasks[indexPath.row].title
+            cell1.txt1.text=tasks[indexPath.row].txt
+            cell1.txtKG.text=tasks[indexPath.row].txtKG
+   //         API.Home(Title: <#T##String#>, Txt: <#T##String#>, txtKG: <#T##String#>, completion: <#T##(Error?, Bool) -> Void#>)
             return cell1
         }else if tableView == tabelView2 {
+            let cell2 = tabelView2.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell2
+            cell2.img2.image=UIImage(named: "Group 376-1")
+            cell2.title2.text=marketTitle2[indexPath.row]
+            cell2.txt2.text=marketTxt2[indexPath.row]
+            cell2.txtKG.text=txtKG2[indexPath.row]
+    //        API.Home(Title: "", Txt: <#T##String#>, txtKG: <#T##String#>, completion: <#T##(Error?, Bool) -> Void#>)
             return cell2
+
+        }else {
+            return UITableViewCell()
         }
-        return UITableViewCell()
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         MyHeight.constant=0
         MyView.isHidden=true
@@ -227,11 +225,10 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
         API.task { (error:Error?, tasks:[Task]?) in
             if let tasks = tasks{
                 self.tasks = tasks
-                self.tabelView1.reloadData()
+                if tasks.count > 0 {
+                    self.tabelView1.reloadData()
+                }
             }
-            
         }
     }
-    
-
 }
