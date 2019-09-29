@@ -41,7 +41,7 @@ class API: NSObject {
     
     
     class func loginAsClient(name:String,phone:String,email:String,addresses: String, completion: @escaping (_  error: Error? , _  success:Bool  )->Void) {
-
+        
         let parameters:[String : Any] = [
             "name": name
             ,"phone": phone
@@ -55,7 +55,7 @@ class API: NSObject {
         
         let url =  "http://appqreeb.com/api/auth/register/client"
         
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil)
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
             .validate(statusCode : 200..<300)
             .responseJSON { response in
                 
@@ -63,9 +63,9 @@ class API: NSObject {
                 case .success(let value ) :
                     completion(nil,true)
                     print(value)
-//                    let json = JSON(value)
-//                    let isRegister = json["is_register"].boolValue
-//                    print(isRegister)
+                    //                    let json = JSON(value)
+                    //                    let isRegister = json["is_register"].boolValue
+                //                    print(isRegister)
                 case .failure(let error) :
                     completion(error,false)
                     print(error)
@@ -97,9 +97,9 @@ class API: NSObject {
                 case .success(let value ) :
                     completion(nil,true)
                     print(value)
-//                    let json = JSON(value)
-//                    let isRegister = json["is_register"].boolValue
-//                    print(isRegister)
+                    //                    let json = JSON(value)
+                    //                    let isRegister = json["is_register"].boolValue
+                //                    print(isRegister)
                 case .failure(let error) :
                     completion(error,false)
                     print(error)
@@ -109,40 +109,48 @@ class API: NSObject {
     }
     
     
-    class func Home(Title:String,Txt:String,txtKG:String, completion: @escaping (_  error: Error? , _  success:Bool  )->Void) {
-
-    let headers = [
-        "X-localization": "ar",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU1NzgwMjQzNiwibmJmIjoxNTU3ODAyNDM2LCJqdGkiOiJuSWs1OHR1WUlsdlpGQXNyIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iYdKsds-wCnkbq2Yq-cv_WVV8zI7LHPiFtri_t1BRAg",
-        "User-Agent": "PostmanRuntime/7.15.2",
-        "Accept": "*/*",
-        "Cache-Control": "no-cache",
-        "Postman-Token": "6e676a06-e5f4-4c42-91e4-14a18dddc62f,ae8e0af2-961f-49ec-a136-9caf34d32e13",
-        "Host": "appqreeb.com",
-        "Accept-Encoding": "gzip, deflate",
-        "Connection": "keep-alive",
-        "cache-control": "no-cache"
-    ]
-    
-    let request = NSMutableURLRequest(url: NSURL(string: "http://appqreeb.com/api/firms/all")! as URL,
-                                      cachePolicy: .useProtocolCachePolicy,
-                                      timeoutInterval: 10.0)
-    request.httpMethod = "GET"
-    request.allHTTPHeaderFields = headers
-    
-    let session = URLSession.shared
-    let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-        if (error != nil) {
-            print(error)
-        } else {
-            let httpResponse = response as? HTTPURLResponse
-            print(httpResponse)
+    class func getFirms(completionHandler: @escaping (_ data: Firms?, _ error: Error?) -> ()) {
+        let url = "http://appqreeb.com/api/firms/all"
+        let headers = [
+            "X-localization": "ar",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU1NzgwMjQzNiwibmJmIjoxNTU3ODAyNDM2LCJqdGkiOiJuSWs1OHR1WUlsdlpGQXNyIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iYdKsds-wCnkbq2Yq-cv_WVV8zI7LHPiFtri_t1BRAg"
+        ]
+        
+        request(url, headers: headers)
+            .validate(statusCode: 200 ..< 300)
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let firms = try JSONDecoder().decode(Firms.self, from: data)
+                        completionHandler(firms, nil)
+                    } catch {
+                        completionHandler(nil, error)
+                    }
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
         }
-    })
+    }
     
-    dataTask.resume()
-}
-
+//        let request = NSMutableURLRequest(url: NSURL(string: "http://appqreeb.com/api/firms/all")! as URL,
+//                                          cachePolicy: .useProtocolCachePolicy,
+//                                          timeoutInterval: 10.0)
+//        request.httpMethod = "GET"
+//        request.allHTTPHeaderFields = headers
+//
+//        let session = URLSession.shared
+//        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+//            if (error != nil) {
+//                print(error)
+//            } else {
+//                let httpResponse = response as? HTTPURLResponse
+//                print(httpResponse)
+//            }
+//        })
+//
+//        dataTask.resume()
+//    }
+    
 }
 

@@ -22,7 +22,6 @@
 		8427C04A231A42B400B3A03D /* contactInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C049231A42B400B3A03D /* contactInfoVC.swift */; };
 		843A09FC230E1D5000187D61 /* OrderNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A09FB230E1D5000187D61 /* OrderNowVC.swift */; };
 		843B28EB22FBF7CC0072C045 /* notificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B28EA22FBF7CC0072C045 /* notificationTableViewCell.swift */; };
-		843B28EF22FC44A40072C045 /* RegisterVCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B28EE22FC44A40072C045 /* RegisterVCs.swift */; };
 		8440B0FC2324171A004502D3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440B0FB2324171A004502D3 /* Task.swift */; };
 		8440B0FF23241ADD004502D3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440B0FE23241ADD004502D3 /* API.swift */; };
 		8440B10123241AF9004502D3 /* API+Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440B10023241AF9004502D3 /* API+Tasks.swift */; };
@@ -54,6 +53,8 @@
 		84FFB98D23079CD700701215 /* Amin Font Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84FFB98A23079CD700701215 /* Amin Font Regular.otf */; };
 		84FFB98E23079CD700701215 /* Amin Font Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84FFB98B23079CD700701215 /* Amin Font Medium.otf */; };
 		A9DC85DCDF9080DAFE8DEE0C /* Pods_Qreeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2560BFB8D7AE7063567795 /* Pods_Qreeb.framework */; };
+		C795ECE12340F289008A96D5 /* RegisterVCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795ECE02340F289008A96D5 /* RegisterVCs.swift */; };
+		C795ECE32340F59F008A96D5 /* Firms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795ECE22340F59F008A96D5 /* Firms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +78,6 @@
 		8434C2CE2336C68C00CA8BF4 /* Qreeb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qreeb.entitlements; sourceTree = "<group>"; };
 		843A09FB230E1D5000187D61 /* OrderNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNowVC.swift; sourceTree = "<group>"; };
 		843B28EA22FBF7CC0072C045 /* notificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationTableViewCell.swift; sourceTree = "<group>"; };
-		843B28EE22FC44A40072C045 /* RegisterVCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterVCs.swift; path = /Users/admin/Documents/Qreeb/Qreeb/RegisterVCs.swift; sourceTree = "<absolute>"; };
 		8440B0FB2324171A004502D3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8440B0FE23241ADD004502D3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8440B10023241AF9004502D3 /* API+Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Tasks.swift"; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 		84C82ACB22FA5F8C004C4C69 /* CommunicationSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationSiteViewController.swift; sourceTree = "<group>"; };
 		84E383A1230A673F00EBE84E /* DoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneVC.swift; sourceTree = "<group>"; };
 		84E383A5230C2D2A00EBE84E /* RegisterPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneVC.swift; sourceTree = "<group>"; };
-		84E383A9230C394400EBE84E /* RegisterVCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterVCs.swift; path = ../../../Qreeb/Qreeb/RegisterVCs.swift; sourceTree = "<group>"; };
 		84EA204E22F8C02D004991CC /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		84EA205022F91150004991CC /* MarketTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell1.swift; sourceTree = "<group>"; };
 		84EA205222F9117D004991CC /* MarketTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell2.swift; sourceTree = "<group>"; };
@@ -109,6 +108,8 @@
 		84FFB98923079CD600701215 /* Amin Font Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Bold.otf"; sourceTree = "<group>"; };
 		84FFB98A23079CD700701215 /* Amin Font Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Regular.otf"; sourceTree = "<group>"; };
 		84FFB98B23079CD700701215 /* Amin Font Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Medium.otf"; sourceTree = "<group>"; };
+		C795ECE02340F289008A96D5 /* RegisterVCs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVCs.swift; sourceTree = "<group>"; };
+		C795ECE22340F59F008A96D5 /* Firms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firms.swift; sourceTree = "<group>"; };
 		FC2560BFB8D7AE7063567795 /* Pods_Qreeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qreeb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,7 +163,6 @@
 				84188E0922E92B0B004C4118 /* Main.storyboard */,
 				84E383A5230C2D2A00EBE84E /* RegisterPhoneVC.swift */,
 				84426389230D41050084D861 /* sendCodePhoneVC.swift */,
-				843B28EE22FC44A40072C045 /* RegisterVCs.swift */,
 				84EA205722F943AE004991CC /* LaunshViewController.swift */,
 				84E383A8230C393000EBE84E /* login */,
 				84EA205622F93F07004991CC /* Market */,
@@ -196,6 +196,7 @@
 			children = (
 				8440B0FB2324171A004502D3 /* Task.swift */,
 				8440B0FD23241AB3004502D3 /* API */,
+				C795ECE22340F59F008A96D5 /* Firms.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,7 +237,7 @@
 		84E383A8230C393000EBE84E /* login */ = {
 			isa = PBXGroup;
 			children = (
-				84E383A9230C394400EBE84E /* RegisterVCs.swift */,
+				C795ECE02340F289008A96D5 /* RegisterVCs.swift */,
 				844C48CF22EE73D7005D8BA6 /* repPicCollectionViewCell.swift */,
 			);
 			path = login;
@@ -436,7 +437,6 @@
 				84188E1C22E947A7004C4118 /* WalkthroughContentViewController.swift in Sources */,
 				84FFB98523066E8400701215 /* MapVC.swift in Sources */,
 				8440B0FF23241ADD004502D3 /* API.swift in Sources */,
-				843B28EF22FC44A40072C045 /* RegisterVCs.swift in Sources */,
 				8427C048231A3FB900B3A03D /* howToBeDeliveryVC.swift in Sources */,
 				84EA205322F9117D004991CC /* MarketTableViewCell2.swift in Sources */,
 				84FFB98723066F7E00701215 /* ChatVC.swift in Sources */,
@@ -451,8 +451,10 @@
 				84EA205C22F95FAA004991CC /* OrdersTableViewCell1.swift in Sources */,
 				84EA205F22F9601E004991CC /* OrderTableViewCell2.swift in Sources */,
 				844C48D822F13672005D8BA6 /* customerCommentsViewController.swift in Sources */,
+				C795ECE12340F289008A96D5 /* RegisterVCs.swift in Sources */,
 				84EA205822F943AE004991CC /* LaunshViewController.swift in Sources */,
 				84188E0622E92B0B004C4118 /* AppDelegate.swift in Sources */,
+				C795ECE32340F59F008A96D5 /* Firms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

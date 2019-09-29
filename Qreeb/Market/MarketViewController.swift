@@ -11,10 +11,11 @@ import UIKit
 class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDelegate ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     var tasks = [Task]()
+    var firms: Firms?
     
     lazy var refresher:UIRefreshControl={
         let refresher = UIRefreshControl()
-        refresher.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+//        refresher.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
         return refresher
     }()
     
@@ -151,7 +152,7 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == tabelView1 {
-            return tasks.count
+            return firms?.data.firms.count ?? 0
         }else if tableView == tabelView2 {
             return marketTitle2.count
         }else {
@@ -163,11 +164,13 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
         
         if tableView == tabelView1 {
             let cell1 = tabelView1.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell1
-            cell1.img1.image=UIImage(named: "Group 376-1")
-            cell1.title1.text=tasks[indexPath.row].title
-            cell1.txt1.text=tasks[indexPath.row].txt
-            cell1.txtKG.text=tasks[indexPath.row].txtKG
-   //         API.Home(Title: <#T##String#>, Txt: <#T##String#>, txtKG: <#T##String#>, completion: <#T##(Error?, Bool) -> Void#>)
+            if let firm = firms?.data.firms[indexPath.row] {
+                cell1.img1.image = UIImage(named: "Group 376-1")
+                cell1.title1.text = firm.name
+                cell1.txt1.text = firm.address
+                cell1.txtKG.text = "\(firm.fromYou) كم"
+            }
+            
             return cell1
         }else if tableView == tabelView2 {
             let cell2 = tabelView2.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! MarketTableViewCell2
@@ -175,7 +178,7 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
             cell2.title2.text=marketTitle2[indexPath.row]
             cell2.txt2.text=marketTxt2[indexPath.row]
             cell2.txtKG.text=txtKG2[indexPath.row]
-    //        API.Home(Title: "", Txt: <#T##String#>, txtKG: <#T##String#>, completion: <#T##(Error?, Bool) -> Void#>)
+
             return cell2
 
         }else {
@@ -214,21 +217,34 @@ class MarketViewController: UIViewController,UITableViewDataSource,UITableViewDe
         layout.itemSize = CGSize(width:( self.myCollectionView.frame.size.width - 20)/2, height: self.myCollectionView.frame.size.height/2.5)
         
         tabelView1.addSubview(refresher)
+        getFirms()
        // tabelView2.addSubview(refresher)
-        handleRefresh()
+//        handleRefresh()
     }
     
 
-    @objc private func handleRefresh(){
-        self.refresher.endRefreshing()
-        
-        API.task { (error:Error?, tasks:[Task]?) in
-            if let tasks = tasks{
-                self.tasks = tasks
-                if tasks.count > 0 {
-                    self.tabelView1.reloadData()
-                }
+    private func getFirms() {
+        API.getFirms { firms, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                guard let firms = firms else { return }
+                self.firms = firms
+                self.tabelView1.reloadData()
             }
         }
     }
+    
+//    @objc private func handleRefresh(){
+//        self.refresher.endRefreshing()
+//
+//        API.task { (error:Error?, tasks:[Task]?) in
+//            if let tasks = tasks{
+//                self.tasks = tasks
+//                if tasks.count > 0 {
+//                    self.tabelView1.reloadData()
+//                }
+//            }
+//        }
+//    }
 }

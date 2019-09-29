@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/admin/Documents/Qreeb/Qreeb/RegisterVCs.swift">
-   </FileRef>
-   <FileRef
-      location = "group:ViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:Qreeb.xcodeproj">
    </FileRef>
    <FileRef
