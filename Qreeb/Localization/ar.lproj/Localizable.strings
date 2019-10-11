@@ -1,0 +1,70 @@
+/* 
+  Localization.strings
+  Qreeb
+
+  Created by Admin on 10/2/19.
+  Copyright © 2019 mariamelnezamy. All rights reserved.
+*/
+"To Change the app languge" = "لتغير لغه التطبيق";
+"Wherever you are" = "وين ما تكون";
+"Choose your language" = "اختار اللغة";
+"Log in" = "تسجيل";
+"Press here to open" = "اضغط هنا للتشغيل";
+"Log as client" = "سجل كعميل";
+"Log as delivery" = "سجل كمندوب";
+"Name" = "الاسم";
+"Phone" = "رقم الجوال";
+"E-mail" = "الايمال";
+"profile picture" = "صورة شخصية";
+"Adress" = "العنوان";
+"Do you want another address ?" = "هل تريد عنوان اخر ؟";
+"I agree to the terms and policies" = "اوافق على الشروط والسياسات";
+"Full Name" = "الاسم كاملا";
+//"صورة الهوية" = "Id Picture"
+"Personal lisence Pictue" = "صورة الرخصة الشخصية";
+"صورة للمركبة من الامام" = "Vehicle from the front Picture";
+"صورة للمركبة من الخلف"  = "Vehicle from the back Picture";
+"صورة الاستمارة" = "Form Picture";
+"صورة شخصية" = "Personality Picture";
+"Bank account number" = "اسم البنك";
+"Bank name" = "اسم صاحب الحساب";
+"Account Holder's Name" = "رقم الحساب البنكي";
+"Edite Profile Picture" = "تعديل الصورة الشخصية";
+"Orders Number" = "عدد الطلبات";
+"Clients Comments" = "تعليقات العملاء";
+"Pay Ways" = "طرق الدفع";
+"Settings" = "الاعدادات";
+"Contact Us" = "تواصل معنا";
+"Log Out" = "تسجيل خروج";
+"Birthday Date" = "تاريخ الميلاد";
+"Gender" = "النوع";
+"Male" = "ذكر";
+"Female" = "انثى";
+"Language Settings" = "اعدادات اللغة";
+"Rings" = "نغمة التنبيه";
+"Complaints List" = "قائمة الشكاوي المقدمة";
+"Usage & Terms" = "سياسة الاستخدام والخصوصية";
+"App Rate" = "قيم التطبيق";
+"How To Be Delivery in Qreeb" = "كيف اكون مندوب في قريب";
+"or contact with us by using message" = "او التواصل معنا عن طريق ارسال رسالة";
+"Send" = "ارسل";
+"title" = "عنوان رسالتك";
+"write message here .." = "اكتب رسالتك هنا ..";
+"Can Contact Us By More Ways" = "تستطيع مراسلتنا باكثر من وسيلة";
+"Ring Name" = "اسم النغمة";
+"Activate search in all firms" = "تفعيل البحث في كل المتاجر";
+"Profile" = "الملف الشخصي";
+"Notifications" = "التنبيهات";
+"Orders" = "الطلبات";
+"Firms" = "المتاجر";
+"notifications client" = "تنبيهات كعميل";
+"notifications delivery" = "تنبيهات كمندوب";
+"order client" = "طلباتي كعميل";
+"order delivery" = "طلباتي كمندوب";
+"active orders" = "طلبات نشطة";
+"finish orders" = "طلبات منتهية";
+"Firms Offer" = "عروض المتاجر";
+"Activity" = "النشاط";
+"All Firms" = "كل المتاجر";
+
+

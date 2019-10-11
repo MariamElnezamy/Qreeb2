@@ -14,22 +14,36 @@ class OrderNowVC: UIViewController {
         super.viewDidLoad()
         
         MyHeight.constant=0
+        
+
     }
     
     var isViewVisiable = false
     @IBOutlet var MyHeight: NSLayoutConstraint!
+    
+    
+    
     @IBOutlet var MyView: UIView!
+    
+    @IBOutlet var arriveTime: UIButton!
+    
+   
+    @IBAction func time(_ sender: UIButton) {
+        
+        arriveTime.setTitle("\(sender.tag) ساعة", for: UIControl.State.normal)
+        self.isViewVisiable = false
+        self.MyHeight.constant=0
+    }
+    
     
     @IBAction func dropDownBtn(_ sender: Any) {
         UIView.animate(withDuration: 0.4) {
             if self.isViewVisiable == false {
                 self.MyHeight.constant=80
                 self.isViewVisiable = true
-//                self.MyView.isHidden=false
             }else {
                 self.isViewVisiable = false
                 self.MyHeight.constant=0
-//                self.MyView.isHidden=true
             }
             self.view.layoutIfNeeded()
         }

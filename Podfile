@@ -12,6 +12,7 @@ pod 'SwiftyJSON'
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
 pod 'Firebase/Core'
+pod 'Localize-Swift', '~> 2.0'
 
 
 end

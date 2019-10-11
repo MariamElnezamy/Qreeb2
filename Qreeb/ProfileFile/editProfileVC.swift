@@ -46,7 +46,7 @@ class editProfileVC: UIViewController {
         let boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
         
         var body = ""
-        var error: NSError? = nil
+        let error: NSError? = nil
         for param in parameters {
             let paramName = param["name"]!
             body += "--\(boundary)\r\n"
@@ -55,7 +55,7 @@ class editProfileVC: UIViewController {
                 let contentType = param["content-type"]!
                 let fileContent = try? String(contentsOfFile: filename, encoding: String.Encoding.utf8)
                 if (error != nil) {
-                    print(error)
+                    print(error as Any)
                 }
                 body += "; filename=\"\(filename)\"\r\n"
                 body += "Content-Type: \(contentType)\r\n\r\n"
@@ -78,10 +78,10 @@ class editProfileVC: UIViewController {
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
             if (error != nil) {
-                print(error)
+                print(error as Any)
             } else {
                 let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
+                print(httpResponse as Any)
             }
         })
         

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let gcmMessageIDKey = "gcm.message_id"
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
 
         
@@ -50,11 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+    private func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         print("DEVICE TOKEN = \(deviceToken)")
     }
     
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+    private func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         print(error)
     }
     

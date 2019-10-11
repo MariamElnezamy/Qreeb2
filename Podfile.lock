@@ -72,6 +72,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.3.0):
     - GoogleUtilities/Logger
+  - Localize-Swift (2.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -85,6 +86,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Core
   - Firebase/Messaging
+  - Localize-Swift (~> 2.0)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -102,6 +104,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - Localize-Swift
     - nanopb
     - Protobuf
     - SwiftyJSON
@@ -120,10 +123,11 @@ SPEC CHECKSUMS:
   GoogleDataTransport: c8617c00e4f3eb9418e42ac0e8ac5241a9d555dd
   GoogleDataTransportCCTSupport: 9f352523e8785a71f6754f51eeff09f49ec19268
   GoogleUtilities: 9c2c544202301110b29f7974a82e77fdcf12bf51
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 67fb42ba613def994e61854de2b3164f13790cc4
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 1e1e1946b21643e01a7a724f3724d994fd678803
+PODFILE CHECKSUM: 2bf0bdd0de2784e4e731e2e3e22cacbb7d66f4ba
 
 COCOAPODS: 1.7.5

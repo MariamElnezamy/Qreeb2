@@ -15,28 +15,29 @@ class howToBeDeliveryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        HowToBe()
     }
     
-//    let headers = [
-//        "X-localization": "ar",
-//        "cache-control": "no-cache",
-//        "Postman-Token": "9ec4458f-1cfc-4294-8730-1307088d1ce5"
-//    ]
+    var delivery:HowtoBeDelivery?
 //
-//    let url =  "http://appqreeb.com/api/pages/how_to_be_delivery"
+    @IBOutlet var MtTxtView: UITextView!
 //
-//    Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers)
-//    .validate(statusCode : 200..<300)
-//    .responseJSON { response in
-//
-//    switch response.result {
-//    case .success(let value) :
-//    print(value)
-//    case .failure(let error) :
-//    print(error)
-//    }
-//    }
+    private func HowToBe() {
+        API.HowToBeDelivery { (HowToBeDelivry, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                guard let firms = HowToBeDelivry else { return }
+                self.delivery = firms
+                self.MtTxtView.text = self.delivery?.data
+            }
+        }
+
+    }
+    
 }
+
+
 
 
 

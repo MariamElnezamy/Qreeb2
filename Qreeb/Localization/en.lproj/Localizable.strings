@@ -1,0 +1,68 @@
+/* 
+  Localization.strings
+  Qreeb
+
+  Created by Admin on 10/2/19.
+  Copyright © 2019 mariamelnezamy. All rights reserved.
+*/
+"To Change the app languge" = "To Change the app languge";
+"Wherever you are" = "Wherever you are";
+"Choose your language" = "Choose your language";
+"Log in" = "Log in";
+"Press here to open" = "Press here to open";
+"Log as client" = "Log as client" ;
+"Log as delivery" = "Log as delivery";
+"Name" = "Name";
+"Phone" = "Phone" ;
+"E-mail" = "E-mail";
+"profile picture" = "profile picture";
+"Adress" = "Adress";
+"Do you want another address ?" = "Do you want another address ?";
+"I agree to the terms and policies"  = "I agree to the terms and policies" ;
+"Full Name" = "Full Name";
+"Identity Picture" = "Identity Picture";
+"Personal lisence Pictue" = "Personal lisence Pictue";
+"Vehicle from the front Picture" = "Vehicle from the front Picture";
+"Vehicle from the back Picture" =  "Vehicle from the back Picture";
+"Form Picture" =  "Form Picture";
+"Personality Picture" = "Personality Picture";
+"Bank account number"  = "Bank account number" ;
+"Bank name" = "Bank name" ;
+"Account Holder's Name" = "Account Holder's Name";
+"Edite Profile Picture" = "Edite Profile Picture";
+"Orders Number" = "Orders Number";
+"Clients Comments" = "Clients Comments";
+"Pay Ways" = "Pay Ways";
+"Settings" = "Settings";
+"Contact Us" = "Contact Us";
+"Log Out" = "Log Out";
+"Birthday Date" = "Birthday Date";
+"Gender" = "Gender";
+"Male" = "Male" ;
+"Female" = "Female";
+"Language Settings" = "Language Settings" ;
+"Rings" = "Rings";
+"Complaints List" = "Complaints List" ;
+"Usage & Terms" = "Usage & Terms" ;
+"App Rate" = "App Rate";
+"How To Be Delivery in Qreeb" = "How To Be Delivery in Qreeb" ;
+"or contact with us by using message" = "or contact with us by using message";
+"Send" = "Send";
+"title" = "title" ;
+"write message here .." = "write message here .." ;
+"Can Contact Us By More Ways" = "Can Contact Us By More Ways" ;
+"Ring Name" = "Ring Name" ;
+"Activate search in all firms" = "Activate search in all firms" ;
+"Profile" = "Profile" ;
+"Notifications" = "Notifications" ;
+"Orders" = "Orders" ;
+"Firms" = "Firms" ;
+"notifications client" = "notifications client";
+"notifications delivery" = "notifications delivery" ;
+"order client" = "order client" ;
+"order delivery" = "order delivery" ;
+"active orders" = "active orders" ;
+"finish orders" = "finish orders" ;
+
+
+

@@ -7,40 +7,34 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
+
 
 class contactInfoVC: UIViewController {
-
+    
+   var contactInfo:CotactInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        contact()
+    }
+    
+    @IBOutlet var number: UILabel!
+    @IBOutlet var email: UILabel!
+    private func contact() {
+        API.ContactInfoClassFunc { (ContactInfo, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                guard let firms = ContactInfo else { return }
+                self.contactInfo = firms
+                self.email.text = self.contactInfo?.data.email
+                self.number.text = self.contactInfo?.data.phone
+
+            }
+        }
     }
     
     @IBAction func sendBtn(_ sender: UIButton) {
-        let headers = [
-            "content-type": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-            "X-localization": "ar",
-            "cache-control": "no-cache",
-            "Postman-Token": "980d6521-ccbc-4fe9-8fff-a4021e2fd2e7"
-        ]
-        let parameters = [
-               "title": "عنوان الشكوى"
-            ,"message": "نص الشكوى"
-            ]
-        
-        let url =  "http://appqreeb.com/api/pages/contact"
-        
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers)
-            .validate(statusCode : 200..<300)
-            .responseJSON { response in
-                
-                switch response.result {
-                case .success(let value) :
-                    print(value)
-                case .failure(let error) :
-                    print(error)
-                }
-        }
     }
     
 }

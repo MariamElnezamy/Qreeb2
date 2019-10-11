@@ -25,6 +25,11 @@ class RegisterVCs: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     @IBOutlet var emailTF: UITextField!
     @IBOutlet var adressTF: UITextField!
     
+    lazy var imagePickerHelper: ImagePickerHelper  = {
+        let imagePickerHelper = ImagePickerHelper(viewController: self, sourceType: .camera)
+        return imagePickerHelper
+    }()
+    
     
     var nameArr:[String]=["صورة الرخصة الشخصية*","صورة الهوية*","صورة للمركبة (من الخلف)*","صورة للمركبة (من الامام)*","صورة شخصية*","صورة الاستمارة*","صورة بيانات البنك (في حالة وجود حساب بنكي رجاء تعبئة البيانات)*"]
     
@@ -37,28 +42,38 @@ class RegisterVCs: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! repPicCollectionViewCell
         cell.picName.text=nameArr[indexPath.row]
-        cell.Pic.image=UIImage(named: "photo")
+            if selectedImages[indexPath] == nil {
+                cell.Pic.image = UIImage(named: "photo")
+            } else {
+                cell.Pic.image = selectedImages[indexPath]
+            }
         return cell
     }
     var currentIndexPath = 0
     var indexArr:[Int] = [0,1,2,3,4,5]
-
+    
+    var selectedImages: [IndexPath: UIImage ] = [:]
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         currentIndexPath = indexArr[indexPath.row]
         if indexArr[indexPath.row] == 2 || indexArr[indexPath.row] == 3  {
-            let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
-            let cameraAction = UIAlertAction(title: "Camera", style: UIAlertAction.Style.default) {
-                UIAlertAction in
-                self.openCamera(UIImagePickerController.SourceType.camera)
-            }
-            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
-                UIAlertAction in
-            }
-            imagePicker.delegate = self as UIImagePickerControllerDelegate & UINavigationControllerDelegate
-            alert.addAction(cameraAction)
-            alert.addAction(cancelAction)
-            self.present(alert, animated: true, completion: nil)
+            
+            let title = "Choose Image".localized()
+            let message = "Need To Choose Image".localized()
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let Camera = UIAlertAction(title: "Galary".localized(), style: .default, handler: {  [weak self](action)-> Void in
+                guard let self = self else { return }
+                self.imagePickerHelper.presentImagePicker()
+                self.imagePickerHelper.imageSelected = { [weak self] image in
+                    guard let self = self else { return }
+                    self.selectedImages[indexPath] = image
+                    self.myCollectionView.reloadData()
+                }
+            })
+            
+            alertController.addAction(Camera)
+            present(alertController, animated: true, completion: nil)
+            
         }else{
             let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
             let cameraAction = UIAlertAction(title: "Camera", style: UIAlertAction.Style.default) {
@@ -153,6 +168,18 @@ class RegisterVCs: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     
     
     @IBAction func loginAsClient(_ sender: Any) {
+//
+//        UserDefaults.standard.set("TTTttttt", forKey: "Token")
+//
+//        let token: String = UserDefaults.standard.value(forKey: "Token") as! String
+//        print(token)
+//        
+//        UserDefaultsHelper().saveObject("TtTTTTTTTTTT", forKey: "Token2")
+//        let token: String = UserDefaultsHelper().getObject(forKey: "Token2")  ?? "" as String
+//                print(token)
+
+        
+        
         API.loginAsClient(name: name2TF.text!, phone: phone2TF.text!, email: emailTF.text!, addresses: adressTF.text!) { (error:Error?, success:Bool) in
             if success {
                 print("success")

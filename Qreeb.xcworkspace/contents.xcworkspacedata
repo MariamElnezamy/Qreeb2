@@ -2,9 +2,2620 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Qreeb.xcodeproj">
+      location = "group:/Users/admin/Desktop/Qreeb2-master 6.14.23 AM/Main.storyboard">
    </FileRef>
+   <Group
+      location = "group:Qreeb"
+      name = "Qreeb">
+      <Group
+         location = "group:ar.lproj"
+         name = "ar.lproj">
+         <FileRef
+            location = "group:LaunchScreen.strings">
+         </FileRef>
+         <FileRef
+            location = "group:Main.strings">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:sendCodePhoneVC.swift">
+      </FileRef>
+      <FileRef
+         location = "group:MyTabBar.swift">
+      </FileRef>
+      <Group
+         location = "group:en.lproj"
+         name = "en.lproj">
+         <FileRef
+            location = "group:Main.strings">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Border&amp;CornerRadius.swift">
+      </FileRef>
+      <FileRef
+         location = "group:RegisterPhoneVC.swift">
+      </FileRef>
+      <Group
+         location = "group:Assets.xcassets"
+         name = "Assets.xcassets">
+         <Group
+            location = "group:png-copy-2_0009_star.imageset"
+            name = "png-copy-2_0009_star.imageset">
+            <FileRef
+               location = "group:png-copy-2_0009_star.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (4).imageset"
+            name = "NoPath - Copy (4).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy (4).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:qarreb in masanger.imageset"
+            name = "qarreb in masanger.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:qarreb in masanger.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0044_edit-image.imageset"
+            name = "png-copy-2_0044_edit-image.imageset">
+            <FileRef
+               location = "group:png-copy-2_0044_edit-image.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:bank-building.imageset"
+            name = "bank-building.imageset">
+            <FileRef
+               location = "group:bank-building.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (16).imageset"
+            name = "ezgif.com-gif-maker (16).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (16).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:small  right arrow.imageset"
+            name = "small  right arrow.imageset">
+            <FileRef
+               location = "group:small  right arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 400-1.imageset"
+            name = "Group 400-1.imageset">
+            <FileRef
+               location = "group:Group 400@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 400@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 400.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:edit-image.imageset"
+            name = "edit-image.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:edit-image.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-17 at 11.50.53 PM.imageset"
+            name = "Screen Shot 2019-08-17 at 11.50.53 PM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-17 at 11.50.53 PM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0016_Qreeb-logo1.imageset"
+            name = "png-copy-2_0016_Qreeb-logo1.imageset">
+            <FileRef
+               location = "group:png-copy-2_0016_Qreeb-logo1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:mic.imageset"
+            name = "mic.imageset">
+            <FileRef
+               location = "group:mic@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0007_track.imageset"
+            name = "png-copy-2_0007_track.imageset">
+            <FileRef
+               location = "group:png-copy-2_0007_track.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0031_location-arrow.imageset"
+            name = "png-copy-2_0031_location-arrow.imageset">
+            <FileRef
+               location = "group:png-copy-2_0031_location-arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0026_money-bag-with-dollar-symbol.imageset"
+            name = "png-copy-2_0026_money-bag-with-dollar-symbol.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0026_money-bag-with-dollar-symbol.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (1).imageset"
+            name = "ezgif.com-gif-maker (1).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (1).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0033_Group-182.imageset"
+            name = "png-copy-2_0033_Group-182.imageset">
+            <FileRef
+               location = "group:png-copy-2_0033_Group-182.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:client icon.imageset"
+            name = "client icon.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:client icon.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:iconfinder_icon-ios7-arrow-right_211607.imageset"
+            name = "iconfinder_icon-ios7-arrow-right_211607.imageset">
+            <FileRef
+               location = "group:iconfinder_icon-ios7-arrow-right_211607.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 417.imageset"
+            name = "Group 417.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 417.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0015_Repeat-Grid-8.imageset"
+            name = "png-copy-2_0015_Repeat-Grid-8.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0015_Repeat-Grid-8.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 416.imageset"
+            name = "Group 416.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 416.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy-2.imageset"
+            name = "NoPath - Copy-2.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy-2.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy-3.imageset"
+            name = "NoPath - Copy-3.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy-3.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0005_user-talking-with-speech-bubble.imageset"
+            name = "png-copy-2_0005_user-talking-with-speech-bubble.imageset">
+            <FileRef
+               location = "group:png-copy-2_0005_user-talking-with-speech-bubble.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0039_fork-and-knife-in-cross.imageset"
+            name = "png-copy-2_0039_fork-and-knife-in-cross.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0039_fork-and-knife-in-cross.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0021_phone.imageset"
+            name = "png-copy-2_0021_phone.imageset">
+            <FileRef
+               location = "group:png-copy-2_0021_phone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (10).imageset"
+            name = "ezgif.com-gif-maker (10).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (10).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (2).imageset"
+            name = "NoPath - Copy (2).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy (2).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:arrow.imageset"
+            name = "arrow.imageset">
+            <FileRef
+               location = "group:arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-17 at 11.48.30 PM.imageset"
+            name = "Screen Shot 2019-08-17 at 11.48.30 PM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-17 at 11.48.30 PM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:iconfinder_icon-ios7-arrow-right_211607 copy.imageset"
+            name = "iconfinder_icon-ios7-arrow-right_211607 copy.imageset">
+            <FileRef
+               location = "group:iconfinder_icon-ios7-arrow-right_211607 copy.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Toggle - On.imageset"
+            name = "Toggle - On.imageset">
+            <FileRef
+               location = "group:Toggle - On.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:location.imageset"
+            name = "location.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:location.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:iconfinder_arrow-down-01_186411.imageset"
+            name = "iconfinder_arrow-down-01_186411.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:iconfinder_arrow-down-01_186411.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:IOS_0000_png-copy-2_0042_event-date-and-time-symbol.imageset"
+            name = "IOS_0000_png-copy-2_0042_event-date-and-time-symbol.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:IOS_0000_png-copy-2_0042_event-date-and-time-symbol.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Ellipse -1.imageset"
+            name = "Ellipse -1.imageset">
+            <FileRef
+               location = "group:Ellipse -1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0014_send-arrow.imageset"
+            name = "png-copy-2_0014_send-arrow.imageset">
+            <FileRef
+               location = "group:png-copy-2_0014_send-arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (7).imageset"
+            name = "ezgif.com-gif-maker (7).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (7).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Path 26.imageset"
+            name = "Path 26.imageset">
+            <FileRef
+               location = "group:Path 26.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0034_Group-181.imageset"
+            name = "png-copy-2_0034_Group-181.imageset">
+            <FileRef
+               location = "group:png-copy-2_0034_Group-181.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:event-date-and-time-symbol-1.imageset"
+            name = "event-date-and-time-symbol-1.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:event-date-and-time-symbol.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0030_location-on-map.imageset"
+            name = "png-copy-2_0030_location-on-map.imageset">
+            <FileRef
+               location = "group:png-copy-2_0030_location-on-map.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0055_arrow.imageset"
+            name = "png-copy-2_0055_arrow.imageset">
+            <FileRef
+               location = "group:png-copy-2_0055_arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0046_cell-phone.imageset"
+            name = "png-copy-2_0046_cell-phone.imageset">
+            <FileRef
+               location = "group:png-copy-2_0046_cell-phone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 400.imageset"
+            name = "Group 400.imageset">
+            <FileRef
+               location = "group:Group 400@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:location arrow.imageset"
+            name = "location arrow.imageset">
+            <FileRef
+               location = "group:location arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:cell-phone.imageset"
+            name = "cell-phone.imageset">
+            <FileRef
+               location = "group:cell-phone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:flag (1).imageset"
+            name = "flag (1).imageset">
+            <FileRef
+               location = "group:flag (1).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 401.imageset"
+            name = "Group 401.imageset">
+            <FileRef
+               location = "group:Group 401@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 401@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 401.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.imageset"
+            name = "&#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.imageset">
+            <FileRef
+               location = "group:&#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x63a;&#x644;&#x637; (3).imageset"
+            name = "&#x63a;&#x644;&#x637; (3).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x63a;&#x644;&#x637;@3x (3).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0032_heart.imageset"
+            name = "png-copy-2_0032_heart.imageset">
+            <FileRef
+               location = "group:png-copy-2_0032_heart.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Rectangle 5.imageset"
+            name = "Rectangle 5.imageset">
+            <FileRef
+               location = "group:Rectangle 5.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 376-1.imageset"
+            name = "Group 376-1.imageset">
+            <FileRef
+               location = "group:Group 376@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0047_cell-phone.imageset"
+            name = "png-copy-2_0047_cell-phone.imageset">
+            <FileRef
+               location = "group:png-copy-2_0047_cell-phone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Mask Group 4.imageset"
+            name = "Mask Group 4.imageset">
+            <FileRef
+               location = "group:Mask Group 4.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Mask Group 5.imageset"
+            name = "Mask Group 5.imageset">
+            <FileRef
+               location = "group:Mask Group 5.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0042_event-date-and-time-symbol.imageset"
+            name = "png-copy-2_0042_event-date-and-time-symbol.imageset">
+            <FileRef
+               location = "group:png-copy-2_0042_event-date-and-time-symbol.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0040_flag-(1).imageset"
+            name = "png-copy-2_0040_flag-(1).imageset">
+            <FileRef
+               location = "group:png-copy-2_0040_flag-(1).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Untitled-1.imageset"
+            name = "Untitled-1.imageset">
+            <FileRef
+               location = "group:Untitled-1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Subtraction 1.imageset"
+            name = "Subtraction 1.imageset">
+            <FileRef
+               location = "group:Subtraction 1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0006_truck.imageset"
+            name = "png-copy-2_0006_truck.imageset">
+            <FileRef
+               location = "group:png-copy-2_0006_truck.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0022_Path-48.imageset"
+            name = "png-copy-2_0022_Path-48.imageset">
+            <FileRef
+               location = "group:png-copy-2_0022_Path-48.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-17 at 11.50.30 PM.imageset"
+            name = "Screen Shot 2019-08-17 at 11.50.30 PM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-17 at 11.50.30 PM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0029_location.imageset"
+            name = "png-copy-2_0029_location.imageset">
+            <FileRef
+               location = "group:png-copy-2_0029_location.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 376.imageset"
+            name = "Group 376.imageset">
+            <FileRef
+               location = "group:Group 376@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0012_share.imageset"
+            name = "png-copy-2_0012_share.imageset">
+            <FileRef
+               location = "group:png-copy-2_0012_share.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:money-bag-with-dollar-symbol.imageset"
+            name = "money-bag-with-dollar-symbol.imageset">
+            <FileRef
+               location = "group:money-bag-with-dollar-symbol.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 182.imageset"
+            name = "Group 182.imageset">
+            <FileRef
+               location = "group:Group 182.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker.imageset"
+            name = "ezgif.com-gif-maker.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:event-date-and-time-symbol.imageset"
+            name = "event-date-and-time-symbol.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:event-date-and-time-symbol.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.imageset"
+            name = "&#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.imageset">
+            <FileRef
+               location = "group:&#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:right icon.imageset"
+            name = "right icon.imageset">
+            <FileRef
+               location = "group:right icon.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:emotion face.imageset"
+            name = "emotion face.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:emotion face.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0054_bank-2.imageset"
+            name = "png-copy-2_0054_bank-2.imageset">
+            <FileRef
+               location = "group:png-copy-2_0054_bank-2.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0023_paperclip.imageset"
+            name = "png-copy-2_0023_paperclip.imageset">
+            <FileRef
+               location = "group:png-copy-2_0023_paperclip.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.imageset"
+            name = "&#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.imageset">
+            <FileRef
+               location = "group:&#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 399.imageset"
+            name = "Group 399.imageset">
+            <FileRef
+               location = "group:Group 399@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:bank.imageset"
+            name = "bank.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:bank.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Q letter.imageset"
+            name = "Q letter.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Q letter.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-18 at 12.06.02 AM.imageset"
+            name = "Screen Shot 2019-08-18 at 12.06.02 AM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-18 at 12.06.02 AM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:lock.imageset"
+            name = "lock.imageset">
+            <FileRef
+               location = "group:lock.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 406.imageset"
+            name = "Group 406.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 406@2x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0010_small--right-arrow.imageset"
+            name = "png-copy-2_0010_small--right-arrow.imageset">
+            <FileRef
+               location = "group:png-copy-2_0010_small--right-arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:plus.imageset"
+            name = "plus.imageset">
+            <FileRef
+               location = "group:plus.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:iconfinder_box-square-form-uncheck-rectangle_3209268.imageset"
+            name = "iconfinder_box-square-form-uncheck-rectangle_3209268.imageset">
+            <FileRef
+               location = "group:iconfinder_box-square-form-uncheck-rectangle_3209268.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Mask Group 3.imageset"
+            name = "Mask Group 3.imageset">
+            <FileRef
+               location = "group:Mask Group 3.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Mask Group 2.imageset"
+            name = "Mask Group 2.imageset">
+            <FileRef
+               location = "group:Mask Group 2.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:photo-camera-1.imageset"
+            name = "photo-camera-1.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:photo-camera.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:phone.imageset"
+            name = "phone.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:phone.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x646;&#x642;&#x637; &#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.imageset"
+            name = "&#x646;&#x642;&#x637; &#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x646;&#x642;&#x637; &#x631;&#x62d;&#x644;&#x629; &#x645;&#x639; &#x642;&#x631;&#x64a;&#x628;.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x644;&#x627;.imageset"
+            name = "&#x644;&#x627;.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x644;&#x627;.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0019_Q-letter.imageset"
+            name = "png-copy-2_0019_Q-letter.imageset">
+            <FileRef
+               location = "group:png-copy-2_0019_Q-letter.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0045_direaction.imageset"
+            name = "png-copy-2_0045_direaction.imageset">
+            <FileRef
+               location = "group:png-copy-2_0045_direaction.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (11).imageset"
+            name = "ezgif.com-gif-maker (11).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (11).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:send arrow.imageset"
+            name = "send arrow.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:send arrow.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0051_birthday-cake.imageset"
+            name = "png-copy-2_0051_birthday-cake.imageset">
+            <FileRef
+               location = "group:png-copy-2_0051_birthday-cake.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Qreeb-logo1.imageset"
+            name = "Qreeb-logo1.imageset">
+            <FileRef
+               location = "group:Qreeb-logo1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:user-talking-with-speech-bubble.imageset"
+            name = "user-talking-with-speech-bubble.imageset">
+            <FileRef
+               location = "group:user-talking-with-speech-bubble.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:heart.imageset"
+            name = "heart.imageset">
+            <FileRef
+               location = "group:heart.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-17 at 11.44.17 PM.imageset"
+            name = "Screen Shot 2019-08-17 at 11.44.17 PM.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Screen Shot 2019-08-17 at 11.44.17 PM.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:microphone.imageset"
+            name = "microphone.imageset">
+            <FileRef
+               location = "group:microphone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (3).imageset"
+            name = "NoPath - Copy (3).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy (3).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy.imageset"
+            name = "NoPath - Copy.imageset">
+            <FileRef
+               location = "group:NoPath - Copy.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:direaction.imageset"
+            name = "direaction.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:direaction.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:camera.imageset"
+            name = "camera.imageset">
+            <FileRef
+               location = "group:camera@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x646;&#x642;&#x637; &#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.imageset"
+            name = "&#x646;&#x642;&#x637; &#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.imageset">
+            <FileRef
+               location = "group:&#x646;&#x642;&#x637; &#x62a;&#x648;&#x627;&#x635;&#x644; &#x645;&#x628;&#x627;&#x634;&#x631;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (6).imageset"
+            name = "ezgif.com-gif-maker (6).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (6).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:not trusted.imageset"
+            name = "not trusted.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:not trusted.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:AppIcon.appiconset"
+            name = "AppIcon.appiconset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0003_&#x62c;&#x64a;&#x62f;.imageset"
+            name = "png-copy-2_0003_&#x62c;&#x64a;&#x62f;.imageset">
+            <FileRef
+               location = "group:png-copy-2_0003_&#x62c;&#x64a;&#x62f;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0028_lock.imageset"
+            name = "png-copy-2_0028_lock.imageset">
+            <FileRef
+               location = "group:png-copy-2_0028_lock.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0000_&#x645;&#x645;&#x62a;&#x627;&#x632;.imageset"
+            name = "png-copy-2_0000_&#x645;&#x645;&#x62a;&#x627;&#x632;.imageset">
+            <FileRef
+               location = "group:png-copy-2_0000_&#x645;&#x645;&#x62a;&#x627;&#x632;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:cell phone.imageset"
+            name = "cell phone.imageset">
+            <FileRef
+               location = "group:cell phone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:gallery-1.imageset"
+            name = "gallery-1.imageset">
+            <FileRef
+               location = "group:gallery.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:gallery.imageset"
+            name = "gallery.imageset">
+            <FileRef
+               location = "group:gallery.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0037_gps.imageset"
+            name = "png-copy-2_0037_gps.imageset">
+            <FileRef
+               location = "group:png-copy-2_0037_gps.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:track.imageset"
+            name = "track.imageset">
+            <FileRef
+               location = "group:track.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:black-male-user-symbol.imageset"
+            name = "black-male-user-symbol.imageset">
+            <FileRef
+               location = "group:black-male-user-symbol.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Qreeb-logo.imageset"
+            name = "Qreeb-logo.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Qreeb-logo.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (14).imageset"
+            name = "ezgif.com-gif-maker (14).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (14).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0020_photo-camera.imageset"
+            name = "png-copy-2_0020_photo-camera.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0020_photo-camera.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0002_&#x633;&#x626;-&#x62c;&#x62f;&#x627;.imageset"
+            name = "png-copy-2_0002_&#x633;&#x626;-&#x62c;&#x62f;&#x627;.imageset">
+            <FileRef
+               location = "group:../png-copy-2_0002_&#x633;&#x626;-&#x62c;&#x62f;&#x627;.imageset/Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 399-1.imageset"
+            name = "Group 399-1.imageset">
+            <FileRef
+               location = "group:Group 399@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 399@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 399.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 403.imageset"
+            name = "Group 403.imageset">
+            <FileRef
+               location = "group:Group 403@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 403@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 403.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 402.imageset"
+            name = "Group 402.imageset">
+            <FileRef
+               location = "group:Group 402@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 402@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 402.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0038_gallery.imageset"
+            name = "png-copy-2_0038_gallery.imageset">
+            <FileRef
+               location = "group:png-copy-2_0038_gallery.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0017_Qreeb-logo.imageset"
+            name = "png-copy-2_0017_Qreeb-logo.imageset">
+            <FileRef
+               location = "group:png-copy-2_0017_Qreeb-logo.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0049_black-male-user-symbol.imageset"
+            name = "png-copy-2_0049_black-male-user-symbol.imageset">
+            <FileRef
+               location = "group:png-copy-2_0049_black-male-user-symbol.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 376-2.imageset"
+            name = "Group 376-2.imageset">
+            <FileRef
+               location = "group:Group 376@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 376@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 376.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:paperclip.imageset"
+            name = "paperclip.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:paperclip.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (68).imageset"
+            name = "NoPath - Copy (68).imageset">
+            <FileRef
+               location = "group:NoPath - Copy (68).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x635;&#x62d;.imageset"
+            name = "&#x635;&#x62d;.imageset">
+            <FileRef
+               location = "group:&#x635;&#x62d;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (3).imageset"
+            name = "ezgif.com-gif-maker (3).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (3).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 396.imageset"
+            name = "Group 396.imageset">
+            <FileRef
+               location = "group:Group 396.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0027_microphone.imageset"
+            name = "png-copy-2_0027_microphone.imageset">
+            <FileRef
+               location = "group:png-copy-2_0027_microphone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0018_qarreb-in-masanger.imageset"
+            name = "png-copy-2_0018_qarreb-in-masanger.imageset">
+            <FileRef
+               location = "group:png-copy-2_0018_qarreb-in-masanger.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 408.imageset"
+            name = "Group 408.imageset">
+            <FileRef
+               location = "group:Group 408.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 408@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 408@2x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Ellipse -3.imageset"
+            name = "Ellipse -3.imageset">
+            <FileRef
+               location = "group:Ellipse -3.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Ellipse -2.imageset"
+            name = "Ellipse -2.imageset">
+            <FileRef
+               location = "group:Ellipse -2.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Artboard &#x2013; 1.imageset"
+            name = "Artboard &#x2013; 1.imageset">
+            <FileRef
+               location = "group:Artboard &#x2013; 1@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-18 at 4.54.37 AM.imageset"
+            name = "Screen Shot 2019-08-18 at 4.54.37 AM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-18 at 4.54.37 AM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0012_share-1.imageset"
+            name = "png-copy-2_0012_share-1.imageset">
+            <FileRef
+               location = "group:png-copy-2_0012_share.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:photo-camera.imageset"
+            name = "photo-camera.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:photo-camera.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:bank 2.imageset"
+            name = "bank 2.imageset">
+            <FileRef
+               location = "group:bank 2.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (8).imageset"
+            name = "ezgif.com-gif-maker (8).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (8).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:shopping-basket (2).imageset"
+            name = "shopping-basket (2).imageset">
+            <FileRef
+               location = "group:shopping-basket (2).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0050_black-back-closed-envelope-shape.imageset"
+            name = "png-copy-2_0050_black-back-closed-envelope-shape.imageset">
+            <FileRef
+               location = "group:png-copy-2_0050_black-back-closed-envelope-shape.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:black-male-user-symbol-1.imageset"
+            name = "black-male-user-symbol-1.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:black-male-user-symbol@3x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy-1.imageset"
+            name = "NoPath - Copy-1.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy-1.png">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+         <Group
+            location = "group:Group 414.imageset"
+            name = "Group 414.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 414.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (12).imageset"
+            name = "ezgif.com-gif-maker (12).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (12).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 415.imageset"
+            name = "Group 415.imageset">
+            <FileRef
+               location = "group:Group 415@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#xa7;&#xd4;&#xdf;  &#xa7;&#xdf;&#xfc;.imageset"
+            name = "&#xa7;&#xd4;&#xdf;  &#xa7;&#xdf;&#xfc;.imageset">
+            <FileRef
+               location = "group:../&#xa7;&#xd4;&#xdf;  &#xa7;&#xdf;&#xfc;.imageset/Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0001_&#x633;&#x626;.imageset"
+            name = "png-copy-2_0001_&#x633;&#x626;.imageset">
+            <FileRef
+               location = "group:../png-copy-2_0001_&#x633;&#x626;.imageset/Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 421.imageset"
+            name = "Group 421.imageset">
+            <FileRef
+               location = "group:Group 421.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0052_bank-building.imageset"
+            name = "png-copy-2_0052_bank-building.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0052_bank-building.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 381.imageset"
+            name = "Group 381.imageset">
+            <FileRef
+               location = "group:Group 381.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (5).imageset"
+            name = "ezgif.com-gif-maker (5).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (5).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:star.imageset"
+            name = "star.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:star.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:el rag7y.imageset"
+            name = "el rag7y.imageset">
+            <FileRef
+               location = "group:el rag7y.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0036_Group-136.imageset"
+            name = "png-copy-2_0036_Group-136.imageset">
+            <FileRef
+               location = "group:png-copy-2_0036_Group-136.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.imageset"
+            name = "&#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.imageset">
+            <FileRef
+               location = "group:&#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-17 at 11.56.15 PM.imageset"
+            name = "Screen Shot 2019-08-17 at 11.56.15 PM.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Screen Shot 2019-08-17 at 11.56.15 PM.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:add your order.imageset"
+            name = "add your order.imageset">
+            <FileRef
+               location = "group:add your order.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (15).imageset"
+            name = "ezgif.com-gif-maker (15).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (15).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0043_emotion-face.imageset"
+            name = "png-copy-2_0043_emotion-face.imageset">
+            <FileRef
+               location = "group:png-copy-2_0043_emotion-face.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Screen Shot 2019-08-18 at 4.34.00 AM.imageset"
+            name = "Screen Shot 2019-08-18 at 4.34.00 AM.imageset">
+            <FileRef
+               location = "group:Screen Shot 2019-08-18 at 4.34.00 AM.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0011_shopping-basket-(2).imageset"
+            name = "png-copy-2_0011_shopping-basket-(2).imageset">
+            <FileRef
+               location = "group:png-copy-2_0011_shopping-basket-(2).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 406-1.imageset"
+            name = "Group 406-1.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 406@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 406.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 406@3x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:el anmaa bank.imageset"
+            name = "el anmaa bank.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:el anmaa bank.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (69).imageset"
+            name = "NoPath - Copy (69).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:NoPath - Copy (69).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:fork-and-knife-in-cross.imageset"
+            name = "fork-and-knife-in-cross.imageset">
+            <FileRef
+               location = "group:fork-and-knife-in-cross.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0004_&#x62c;&#x64a;&#x62f;--&#x62c;&#x62f;&#x627;.imageset"
+            name = "png-copy-2_0004_&#x62c;&#x64a;&#x62f;--&#x62c;&#x62f;&#x627;.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0004_&#x62c;&#x64a;&#x62f;--&#x62c;&#x62f;&#x627;.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x646;&#x642;&#x637; &#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.imageset"
+            name = "&#x646;&#x642;&#x637; &#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.imageset">
+            <FileRef
+               location = "group:&#x646;&#x642;&#x637; &#x639;&#x631;&#x648;&#x636; &#x628;&#x627;&#x641;&#x636;&#x644; &#x627;&#x644;&#x627;&#x633;&#x639;&#x627;&#x631;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 413.imageset"
+            name = "Group 413.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 413.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x2265;&#xf7;.imageset"
+            name = "&#x2265;&#xf7;.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:client icon@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:client icon.png">
+            </FileRef>
+            <FileRef
+               location = "group:client icon@2x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 412.imageset"
+            name = "Group 412.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 412.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NoPath - Copy (7).imageset"
+            name = "NoPath - Copy (7).imageset">
+            <FileRef
+               location = "group:NoPath - Copy (7).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:black-back-closed-envelope-shape.imageset"
+            name = "black-back-closed-envelope-shape.imageset">
+            <FileRef
+               location = "group:black-back-closed-envelope-shape.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x646;&#x642;&#x637; &#x62d;&#x64a;&#x627;&#x643; &#x641;&#x649; &#x642;&#x631;&#x64a;&#x628;.imageset"
+            name = "&#x646;&#x642;&#x637; &#x62d;&#x64a;&#x627;&#x643; &#x641;&#x649; &#x642;&#x631;&#x64a;&#x628;.imageset">
+            <FileRef
+               location = "group:&#x646;&#x642;&#x637; &#x62d;&#x64a;&#x627;&#x643; &#x641;&#x649; &#x642;&#x631;&#x64a;&#x628;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0041_exit-arrow.imageset"
+            name = "png-copy-2_0041_exit-arrow.imageset">
+            <FileRef
+               location = "group:png-copy-2_0041_exit-arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0035_Group-180.imageset"
+            name = "png-copy-2_0035_Group-180.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0035_Group-180.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 419.imageset"
+            name = "Group 419.imageset">
+            <FileRef
+               location = "group:Group 419@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 418.imageset"
+            name = "Group 418.imageset">
+            <FileRef
+               location = "group:Group 418.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:photo.imageset"
+            name = "photo.imageset">
+            <FileRef
+               location = "group:photo@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x645;&#x62a;&#x649; &#x62a;&#x645; &#x627;&#x644;&#x62a;&#x62d;&#x648;&#x64a;&#x644;.imageset"
+            name = "&#x645;&#x62a;&#x649; &#x62a;&#x645; &#x627;&#x644;&#x62a;&#x62d;&#x648;&#x64a;&#x644;.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x645;&#x62a;&#x649; &#x62a;&#x645; &#x627;&#x644;&#x62a;&#x62d;&#x648;&#x64a;&#x644;.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:gps.imageset"
+            name = "gps.imageset">
+            <FileRef
+               location = "group:gps.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Path 48.imageset"
+            name = "Path 48.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Path 48.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x62d;&#x64a;&#x627;&#x643; &#x641; &#x642;&#x631;&#x64a;&#x628;.imageset"
+            name = "&#x62d;&#x64a;&#x627;&#x643; &#x641; &#x642;&#x631;&#x64a;&#x628;.imageset">
+            <FileRef
+               location = "group:&#x62d;&#x64a;&#x627;&#x643; &#x641; &#x642;&#x631;&#x64a;&#x628;.png">
+            </FileRef>
+            <FileRef
+               location = "group:&#x62d;&#x64a;&#x627;&#x643; &#x641; &#x642;&#x631;&#x64a;&#x628;@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:&#x62d;&#x64a;&#x627;&#x643; &#x641; &#x642;&#x631;&#x64a;&#x628;@3x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:location on map.imageset"
+            name = "location on map.imageset">
+            <FileRef
+               location = "group:location on map.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0048_car.imageset"
+            name = "png-copy-2_0048_car.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0048_car.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:exit-arrow.imageset"
+            name = "exit-arrow.imageset">
+            <FileRef
+               location = "group:exit-arrow.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:car.imageset"
+            name = "car.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:car.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:truck.imageset"
+            name = "truck.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:truck.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Repeat Grid 8.imageset"
+            name = "Repeat Grid 8.imageset">
+            <FileRef
+               location = "group:Repeat Grid 8.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#xcd;&#xcd;&#xa2;&#xfc;&#x2122;.imageset"
+            name = "&#xcd;&#xcd;&#xa2;&#xfc;&#x2122;.imageset">
+            <FileRef
+               location = "group:../&#xcd;&#xcd;&#xa2;&#xfc;&#x2122;.imageset/Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:birthday-cake.imageset"
+            name = "birthday-cake.imageset">
+            <FileRef
+               location = "group:birthday-cake.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 404.imageset"
+            name = "Group 404.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 404@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 404.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 404@2x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (13).imageset"
+            name = "ezgif.com-gif-maker (13).imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:ezgif.com-gif-maker (13).png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 405.imageset"
+            name = "Group 405.imageset">
+            <FileRef
+               location = "group:Group 405@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Group 405@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:Group 405.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0008_Toggle---On.imageset"
+            name = "png-copy-2_0008_Toggle---On.imageset">
+            <FileRef
+               location = "group:png-copy-2_0008_Toggle---On.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (9).imageset"
+            name = "ezgif.com-gif-maker (9).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (9).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Ellipse 9.imageset"
+            name = "Ellipse 9.imageset">
+            <FileRef
+               location = "group:Ellipse 9.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:png-copy-2_0053_bank.imageset"
+            name = "png-copy-2_0053_bank.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:png-copy-2_0053_bank.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:pic.imageset"
+            name = "pic.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:pic.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:password icon.imageset"
+            name = "password icon.imageset">
+            <FileRef
+               location = "group:password icon.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:smartphone.imageset"
+            name = "smartphone.imageset">
+            <FileRef
+               location = "group:smartphone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:microphone-1.imageset"
+            name = "microphone-1.imageset">
+            <FileRef
+               location = "group:microphone.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:green icon.imageset"
+            name = "green icon.imageset">
+            <FileRef
+               location = "group:green icon.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 181.imageset"
+            name = "Group 181.imageset">
+            <FileRef
+               location = "group:Group 181.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Group 180.imageset"
+            name = "Group 180.imageset">
+            <FileRef
+               location = "group:Group 180.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:&#x646;&#x642;&#x637; &#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.imageset"
+            name = "&#x646;&#x642;&#x637; &#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.imageset">
+            <FileRef
+               location = "group:&#x646;&#x642;&#x637; &#x627;&#x637;&#x644;&#x628; &#x628;&#x643;&#x644; &#x633;&#x647;&#x648;&#x644;&#x629;.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Repeat Grid 8-1.imageset"
+            name = "Repeat Grid 8-1.imageset">
+            <FileRef
+               location = "group:Repeat Grid 8.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ezgif.com-gif-maker (4).imageset"
+            name = "ezgif.com-gif-maker (4).imageset">
+            <FileRef
+               location = "group:ezgif.com-gif-maker (4).png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:IOS_0006_png-copy-2_0029_location.imageset"
+            name = "IOS_0006_png-copy-2_0029_location.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:IOS_0006_png-copy-2_0029_location.png">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Slider"
+         name = "Slider">
+         <FileRef
+            location = "group:WalkthroughPageViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:WalkthroughContentViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Base.lproj"
+         name = "Base.lproj">
+         <FileRef
+            location = "group:LaunchScreen.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:Main.storyboard">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Extensions"
+         name = "Extensions">
+         <FileRef
+            location = "group:AlertBuilder.swift">
+         </FileRef>
+         <FileRef
+            location = "group:UserDefaultsHelper.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ImagePickerHelper.swift">
+         </FileRef>
+         <FileRef
+            location = "group:UIViewControllerExtensions.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LaunshViewController.swift">
+      </FileRef>
+      <Group
+         location = "group:Model"
+         name = "Model">
+         <Group
+            location = "group:Auth"
+            name = "Auth">
+            <FileRef
+               location = "group:logOut.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UserTabInfo.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ClientsComment.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:General"
+            name = "General">
+            <FileRef
+               location = "group:HowtoBeDelivery.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CotactInfo.swift">
+            </FileRef>
+            <FileRef
+               location = "group:introPages.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Usage&amp;Terms.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Transactions"
+            name = "Transactions">
+            <FileRef
+               location = "group:AllBanksAccount.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:API"
+            name = "API">
+            <FileRef
+               location = "group:API+Tasks.swift">
+            </FileRef>
+            <FileRef
+               location = "group:API.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Orders"
+            name = "Orders">
+            <FileRef
+               location = "group:FinishOrderDelivery.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FinishOrderClient.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ActiveOrderClient.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ActiveOrderDelivery.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Task.swift">
+         </FileRef>
+         <Group
+            location = "group:Firms"
+            name = "Firms">
+            <FileRef
+               location = "group:FirmMap.swift">
+            </FileRef>
+            <FileRef
+               location = "group:WaitingListOrdersForFirm.swift">
+            </FileRef>
+            <FileRef
+               location = "group:allFirmsOffers.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Firms.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SingleFirmDetailsByFirmId.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FirmsNear.swift">
+            </FileRef>
+            <FileRef
+               location = "group:AllCategoryFirms.swift">
+            </FileRef>
+            <FileRef
+               location = "group:waitingListCell.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Notifications"
+            name = "Notifications">
+            <FileRef
+               location = "group:Delivery.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Client.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:loginViewController.swift">
+      </FileRef>
+      <Group
+         location = "group:Market"
+         name = "Market">
+         <FileRef
+            location = "group:MarketTableViewCell2.swift">
+         </FileRef>
+         <FileRef
+            location = "group:MarketTableViewCell1.swift">
+         </FileRef>
+         <FileRef
+            location = "group:cellCV.swift">
+         </FileRef>
+         <FileRef
+            location = "group:OrderNowVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:firmsNearCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:MarketCollectionViewCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:waitingListCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:MarketViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DismissVC.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:AppDelegate.swift">
+      </FileRef>
+      <Group
+         location = "group:Orders"
+         name = "Orders">
+         <FileRef
+            location = "group:OrdersTableViewCell1.swift">
+         </FileRef>
+         <FileRef
+            location = "group:OrdersViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DeletOrderVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DropDownVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:OrderTableViewCell2.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ProfileFile"
+         name = "ProfileFile">
+         <FileRef
+            location = "group:howToBeDeliveryVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:UsageAndTermsVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:customerCommentsTableViewCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AllBanksCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AllBanksAccountVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:editProfileVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:contactInfoVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:customerCommentsViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:RingNameVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:profileFileVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CommunicationSiteViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:logOutViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:helper.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Qreeb.entitlements">
+      </FileRef>
+      <Group
+         location = "group:Fonts"
+         name = "Fonts">
+         <FileRef
+            location = "group:Amin Font Medium.otf">
+         </FileRef>
+         <FileRef
+            location = "group:Amin Font Regular.otf">
+         </FileRef>
+         <FileRef
+            location = "group:Amin Font Bold.otf">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Notifications"
+         name = "Notifications">
+         <FileRef
+            location = "group:Notifications.swift">
+         </FileRef>
+         <FileRef
+            location = "group:NotificationDeliveryCell.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ChatVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:MapVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DoneVC.swift">
+         </FileRef>
+         <FileRef
+            location = "group:closeViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:notificationTableViewCell.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:login"
+         name = "login">
+         <FileRef
+            location = "group:RegisterVCs.swift">
+         </FileRef>
+         <FileRef
+            location = "group:repPicCollectionViewCell.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+      <Group
+         location = "group:Localization"
+         name = "Localization">
+         <Group
+            location = "group:ar.lproj"
+            name = "ar.lproj">
+            <FileRef
+               location = "group:Localizable.strings">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:en.lproj"
+            name = "en.lproj">
+            <FileRef
+               location = "group:Localizable.strings">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Qreeb.xcodeproj">
    </FileRef>
 </Workspace>

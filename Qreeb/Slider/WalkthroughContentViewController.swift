@@ -18,6 +18,8 @@ class WalkthroughContentViewController: UIViewController {
         @IBOutlet var PicPager: UIImageView!
         @IBOutlet var PicScreenShot: UIImageView!
     
+    var introRespose:IntroPages?
+    
     @IBAction func urlBtn(_ sender: UIButton) {
         guard let url = URL(string: "https://www.youtube.com/watch?v=GVzgARJvTG8&list=LLGrpLLc_gWMwZmOB0BjFjdA&index=17&t=11s") else {return}
         
@@ -36,36 +38,14 @@ class WalkthroughContentViewController: UIViewController {
         var ScreenShotPic = ""
         var pagerPic = ""
         var pressToTurnLb=""
-    
+
     
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-            viewForBtn.isHidden = index != 4
-            pageControl.currentPage = index
-            headingLabel.text = heading
-            contentLabel.text = content
-            contentImageView.image = UIImage(named: imageFile)
-            PicScreenShot.image = UIImage(named: ScreenShotPic)
-            PicPager.image = UIImage(named: pagerPic)
-            
-            if index == 1 {
-                let myRange = NSRange(location: 3, length: 9)
-                let anotherAttribute = [ NSAttributedString.Key.backgroundColor: UIColor.orange ]
-                let myAttribute = [ NSAttributedString.Key.font: UIFont(name: "Amin", size: 18.0)! ]
-                let myString = NSMutableAttributedString( string: "اطلب الان", attributes: myAttribute )
-                myString.addAttributes(anotherAttribute, range: myRange)
-                contentLabel.attributedText = myString
-                
-                let myRange2 = NSRange(location: 3, length: 17)
-                let anotherAttribute2 = [ NSAttributedString.Key.backgroundColor: UIColor.orange ]
-                let myAttribute2 = [ NSAttributedString.Key.font: UIFont(name: "Amin", size: 18.0)! ]
-                let myString2 = NSMutableAttributedString( string: "سجلني كمندوب قريب", attributes: myAttribute2 )
-                myString.addAttributes(anotherAttribute2, range: myRange2)
-                contentLabel.attributedText = myString2
-            }
-            
+            self.viewForBtn.isHidden = self.index != 4
+
+           // IntroPagesFun()
         }
     
     @IBAction func nextButtonTapped(sender: UIButton) {
@@ -80,7 +60,36 @@ class WalkthroughContentViewController: UIViewController {
         default: break
         }
     }
- 
+
+//    private func IntroPagesFun() {
+//        API.introPagesClassFunc { (introStruc, error) in
+//            if let error = error {
+//                print(error.localizedDescription)
+//            } else {
+//                guard let firms = introStruc else { return }
+//                self.introRespose = firms
+//                if let respose = introStruc?.data{
+//                    self.pageControl.currentPage = respose.
+//              //      self.headingLabel.text = self.intro
+//                    self.contentLabel.text = self.content
+//                    self.contentImageView.image = UIImage(named: self.imageFile)
+//                    self.PicScreenShot.image = UIImage(named: self.ScreenShotPic)
+//                    self.PicPager.image = UIImage(named: self.pagerPic)
+//
+//                    if self.index == 1 {
+//                        let firstRang = NSRange(location: 19, length: 9)
+//                        let secondRang = NSRange(location: 74, length: 17)
+//                        let attributedString = NSMutableAttributedString(string: self.content)
+//                        attributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange], range: firstRang)
+//                        attributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange], range: secondRang)
+//                        self.contentLabel.attributedText = attributedString
+//                }
+//
+//
+//                }
+//            }
+//        }
+//    }
     
     }
 

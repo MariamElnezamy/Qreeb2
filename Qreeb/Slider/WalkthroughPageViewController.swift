@@ -11,6 +11,7 @@ import UIKit
     class WalkthroughPageViewController:  UIPageViewController,
     UIPageViewControllerDataSource{
         
+        
         func pageViewController(_ pageViewController: UIPageViewController,
                                 viewControllerBefore viewController: UIViewController) -> UIViewController? {
             var index = (viewController as! WalkthroughContentViewController).index
@@ -34,6 +35,7 @@ import UIKit
                 setViewControllers([startingViewController], direction: .forward,
                                    animated: true, completion: nil)
             }
+            
             
         }
         
@@ -71,6 +73,9 @@ import UIKit
             if let pageContentViewController =
                 storyboard?.instantiateViewController(withIdentifier:
                     "WalkthroughContentViewController") as? WalkthroughContentViewController {
+                
+                
+                
                 pageContentViewController.imageFile = pageImages[index]
                 pageContentViewController.heading = pageHeadings[index]
                 pageContentViewController.index = index
@@ -89,6 +94,9 @@ import UIKit
                     true, completion: nil)
             }
         }
+        
+
+
         
 
 
