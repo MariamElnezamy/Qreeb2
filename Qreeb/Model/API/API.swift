@@ -165,8 +165,9 @@ class API: NSObject {
         }
     }
 
-    class func FirmMapClassFunc(completionHandler: @escaping (_ data: FirmMap?, _ error: Error?) -> ()) {
-        let url = "http://appqreeb.com/api/firms/map/all?lat=16.00&lng=18.00"
+    class func FirmMapClassFunc(lat: String,lng: String,  completionHandler: @escaping (_ data: FirmMap?, _ error: Error?) -> ()) {
+        let url = "http://appqreeb.com/api/firms/map/all?lat=\(lat)&lng=\(lng)"
+
         let headers = [
             "X-localization": "ar",
             "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU1NzgwMjQzNiwibmJmIjoxNTU3ODAyNDM2LCJqdGkiOiJuSWs1OHR1WUlsdlpGQXNyIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iYdKsds-wCnkbq2Yq-cv_WVV8zI7LHPiFtri_t1BRAg",

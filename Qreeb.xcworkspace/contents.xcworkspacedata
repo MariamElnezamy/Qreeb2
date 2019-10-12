@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:/Users/admin/Desktop/Qreeb2-master 6.14.23 AM/Main.storyboard">
-   </FileRef>
    <Group
       location = "group:Qreeb"
       name = "Qreeb">
@@ -2443,37 +2440,6 @@
       <FileRef
          location = "group:loginViewController.swift">
       </FileRef>
-      <Group
-         location = "group:Market"
-         name = "Market">
-         <FileRef
-            location = "group:MarketTableViewCell2.swift">
-         </FileRef>
-         <FileRef
-            location = "group:MarketTableViewCell1.swift">
-         </FileRef>
-         <FileRef
-            location = "group:cellCV.swift">
-         </FileRef>
-         <FileRef
-            location = "group:OrderNowVC.swift">
-         </FileRef>
-         <FileRef
-            location = "group:firmsNearCell.swift">
-         </FileRef>
-         <FileRef
-            location = "group:MarketCollectionViewCell.swift">
-         </FileRef>
-         <FileRef
-            location = "group:waitingListCell.swift">
-         </FileRef>
-         <FileRef
-            location = "group:MarketViewController.swift">
-         </FileRef>
-         <FileRef
-            location = "group:DismissVC.swift">
-         </FileRef>
-      </Group>
       <FileRef
          location = "group:AppDelegate.swift">
       </FileRef>

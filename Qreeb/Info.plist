@@ -6,8 +6,10 @@
 	<string>$(PRODUCT_NAME) Need To Scan ID</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) Need To Pick ID</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>available</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This application requires location services to work</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This application requires location services to work</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

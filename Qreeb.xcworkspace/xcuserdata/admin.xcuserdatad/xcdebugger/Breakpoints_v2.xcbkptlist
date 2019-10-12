@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Qreeb/Market/MarketViewController.swift"
-            timestampString = "592460671.971861"
+            timestampString = "592534418.481688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "363"
             endingLineNumber = "363"
-            landmarkName = "allFirmsOfferFun()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -107,8 +107,8 @@
                   symbolName = "Qreeb.RegisterVCs.loginAsClient(Any) -&gt; ()"
                   moduleName = "Qreeb"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/Qreeb2-master%206.14.23%20AM/Qreeb/login/RegisterVCs.swift"
-                  timestampString = "592341932.6235909"
+                  urlString = "file:///Users/admin/Documents/New%20Qreeb/Qreeb2/Qreeb/login/RegisterVCs.swift"
+                  timestampString = "592538102.345405"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "183"
@@ -122,8 +122,8 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Bool) -&gt; () in Qreeb.RegisterVCs.loginAsClient(Any) -&gt; ()"
                   moduleName = "Qreeb"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/Qreeb2-master%206.14.23%20AM/Qreeb/login/RegisterVCs.swift"
-                  timestampString = "592341932.628818"
+                  urlString = "file:///Users/admin/Documents/New%20Qreeb/Qreeb2/Qreeb/login/RegisterVCs.swift"
+                  timestampString = "592538102.3481849"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "184"

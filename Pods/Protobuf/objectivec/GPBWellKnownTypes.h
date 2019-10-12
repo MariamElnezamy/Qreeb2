@@ -38,8 +38,8 @@
 
 #if GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS
  #import <protobuf/Any.pbobjc.h>
-#import <protobuf/Duration.pbobjc.h>
-#import <protobuf/Timestamp.pbobjc.h>
+ #import <protobuf/Duration.pbobjc.h>
+ #import <protobuf/Timestamp.pbobjc.h>
 #else
  #import "google/protobuf/Any.pbobjc.h"
  #import "google/protobuf/Duration.pbobjc.h"

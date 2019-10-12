@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6056DD58012AF1A61F523799 /* Pods_Qreeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714A1FAC327EC8561B4D0C46 /* Pods_Qreeb.framework */; };
 		84100B992308F6A700C28F8A /* cellCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84100B982308F6A700C28F8A /* cellCV.swift */; };
 		84100B9B230A47EB00C28F8A /* DismissVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84100B9A230A47EB00C28F8A /* DismissVC.swift */; };
 		84100B9D230A4A3500C28F8A /* DropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84100B9C230A4A3500C28F8A /* DropDownVC.swift */; };
@@ -65,12 +66,16 @@
 		845D8B4C23483C36004C3B53 /* AllBanksAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D8B4B23483C36004C3B53 /* AllBanksAccount.swift */; };
 		845D8B5023483EB3004C3B53 /* AllBanksAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D8B4F23483EB3004C3B53 /* AllBanksAccountVC.swift */; };
 		845D8B52234840DD004C3B53 /* AllBanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D8B51234840DD004C3B53 /* AllBanksCell.swift */; };
+		846C557A235160D9002D6256 /* MarketViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5576235160D9002D6256 /* MarketViewController+Network.swift */; };
+		846C557B235160D9002D6256 /* MarketViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5577235160D9002D6256 /* MarketViewController+CollectionView.swift */; };
+		846C557C235160D9002D6256 /* MarketViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5578235160D9002D6256 /* MarketViewController+TableView.swift */; };
+		846C557D235160D9002D6256 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5579235160D9002D6256 /* MarketViewController.swift */; };
+		846C557F235161E6002D6256 /* MarketViewController+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C557E235161E6002D6256 /* MarketViewController+Map.swift */; };
 		84C4A452234C1DAB00C3765A /* profileFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4A451234C1DAB00C3765A /* profileFileVC.swift */; };
 		84C4A454234C1EB500C3765A /* UserTabInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4A453234C1EB500C3765A /* UserTabInfo.swift */; };
 		84C82ACC22FA5F8C004C4C69 /* CommunicationSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C82ACB22FA5F8C004C4C69 /* CommunicationSiteViewController.swift */; };
 		84E383A2230A673F00EBE84E /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E383A1230A673F00EBE84E /* DoneVC.swift */; };
 		84E383A6230C2D2A00EBE84E /* RegisterPhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E383A5230C2D2A00EBE84E /* RegisterPhoneVC.swift */; };
-		84EA204F22F8C02D004991CC /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA204E22F8C02D004991CC /* MarketViewController.swift */; };
 		84EA205122F91150004991CC /* MarketTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA205022F91150004991CC /* MarketTableViewCell1.swift */; };
 		84EA205322F9117D004991CC /* MarketTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA205222F9117D004991CC /* MarketTableViewCell2.swift */; };
 		84EA205522F93EF5004991CC /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA205422F93EF5004991CC /* MarketCollectionViewCell.swift */; };
@@ -85,14 +90,13 @@
 		84FFB98C23079CD700701215 /* Amin Font Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84FFB98923079CD600701215 /* Amin Font Bold.otf */; };
 		84FFB98D23079CD700701215 /* Amin Font Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84FFB98A23079CD700701215 /* Amin Font Regular.otf */; };
 		84FFB98E23079CD700701215 /* Amin Font Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84FFB98B23079CD700701215 /* Amin Font Medium.otf */; };
-		A9DC85DCDF9080DAFE8DEE0C /* Pods_Qreeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2560BFB8D7AE7063567795 /* Pods_Qreeb.framework */; };
 		C795ECE12340F289008A96D5 /* RegisterVCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795ECE02340F289008A96D5 /* RegisterVCs.swift */; };
 		C795ECE32340F59F008A96D5 /* Firms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795ECE22340F59F008A96D5 /* Firms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04B159B755378D786F64C3AD /* Pods-Qreeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreeb.debug.xcconfig"; path = "Target Support Files/Pods-Qreeb/Pods-Qreeb.debug.xcconfig"; sourceTree = "<group>"; };
-		219E2D60ABBF437D6948FB12 /* Pods-Qreeb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreeb.release.xcconfig"; path = "Target Support Files/Pods-Qreeb/Pods-Qreeb.release.xcconfig"; sourceTree = "<group>"; };
+		6B838997553033FB35950943 /* Pods-Qreeb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreeb.release.xcconfig"; path = "Target Support Files/Pods-Qreeb/Pods-Qreeb.release.xcconfig"; sourceTree = "<group>"; };
+		714A1FAC327EC8561B4D0C46 /* Pods_Qreeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qreeb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84100B982308F6A700C28F8A /* cellCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellCV.swift; sourceTree = "<group>"; };
 		84100B9A230A47EB00C28F8A /* DismissVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissVC.swift; sourceTree = "<group>"; };
 		84100B9C230A4A3500C28F8A /* DropDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownVC.swift; sourceTree = "<group>"; };
@@ -156,12 +160,16 @@
 		845D8B4B23483C36004C3B53 /* AllBanksAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBanksAccount.swift; sourceTree = "<group>"; };
 		845D8B4F23483EB3004C3B53 /* AllBanksAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBanksAccountVC.swift; sourceTree = "<group>"; };
 		845D8B51234840DD004C3B53 /* AllBanksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBanksCell.swift; sourceTree = "<group>"; };
+		846C5576235160D9002D6256 /* MarketViewController+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarketViewController+Network.swift"; sourceTree = "<group>"; };
+		846C5577235160D9002D6256 /* MarketViewController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarketViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		846C5578235160D9002D6256 /* MarketViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarketViewController+TableView.swift"; sourceTree = "<group>"; };
+		846C5579235160D9002D6256 /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		846C557E235161E6002D6256 /* MarketViewController+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketViewController+Map.swift"; sourceTree = "<group>"; };
 		84C4A451234C1DAB00C3765A /* profileFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileFileVC.swift; sourceTree = "<group>"; };
 		84C4A453234C1EB500C3765A /* UserTabInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabInfo.swift; sourceTree = "<group>"; };
 		84C82ACB22FA5F8C004C4C69 /* CommunicationSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationSiteViewController.swift; sourceTree = "<group>"; };
 		84E383A1230A673F00EBE84E /* DoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneVC.swift; sourceTree = "<group>"; };
 		84E383A5230C2D2A00EBE84E /* RegisterPhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneVC.swift; sourceTree = "<group>"; };
-		84EA204E22F8C02D004991CC /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		84EA205022F91150004991CC /* MarketTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell1.swift; sourceTree = "<group>"; };
 		84EA205222F9117D004991CC /* MarketTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell2.swift; sourceTree = "<group>"; };
 		84EA205422F93EF5004991CC /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -176,9 +184,9 @@
 		84FFB98923079CD600701215 /* Amin Font Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Bold.otf"; sourceTree = "<group>"; };
 		84FFB98A23079CD700701215 /* Amin Font Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Regular.otf"; sourceTree = "<group>"; };
 		84FFB98B23079CD700701215 /* Amin Font Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amin Font Medium.otf"; sourceTree = "<group>"; };
+		967C9DEF5C8848127EB21C80 /* Pods-Qreeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreeb.debug.xcconfig"; path = "Target Support Files/Pods-Qreeb/Pods-Qreeb.debug.xcconfig"; sourceTree = "<group>"; };
 		C795ECE02340F289008A96D5 /* RegisterVCs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVCs.swift; sourceTree = "<group>"; };
 		C795ECE22340F59F008A96D5 /* Firms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firms.swift; sourceTree = "<group>"; };
-		FC2560BFB8D7AE7063567795 /* Pods_Qreeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qreeb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,17 +194,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DC85DCDF9080DAFE8DEE0C /* Pods_Qreeb.framework in Frameworks */,
+				6056DD58012AF1A61F523799 /* Pods_Qreeb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53856416450B7BE72180E41E /* Frameworks */ = {
+		45BA88F17E6702AA142FB7FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC2560BFB8D7AE7063567795 /* Pods_Qreeb.framework */,
+				714A1FAC327EC8561B4D0C46 /* Pods_Qreeb.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +216,7 @@
 				84188E0422E92B0B004C4118 /* Qreeb */,
 				84188E0322E92B0B004C4118 /* Products */,
 				E6C16CAA3E6A69B63C4795EC /* Pods */,
-				53856416450B7BE72180E41E /* Frameworks */,
+				45BA88F17E6702AA142FB7FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -369,6 +377,18 @@
 			path = Transactions;
 			sourceTree = "<group>";
 		};
+		846C5575235160D9002D6256 /* MarketVC */ = {
+			isa = PBXGroup;
+			children = (
+				846C5576235160D9002D6256 /* MarketViewController+Network.swift */,
+				846C5577235160D9002D6256 /* MarketViewController+CollectionView.swift */,
+				846C5578235160D9002D6256 /* MarketViewController+TableView.swift */,
+				846C5579235160D9002D6256 /* MarketViewController.swift */,
+				846C557E235161E6002D6256 /* MarketViewController+Map.swift */,
+			);
+			path = MarketVC;
+			sourceTree = "<group>";
+		};
 		8491853122FA4CEA007715CE /* Slider */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,7 +429,7 @@
 		84EA205622F93F07004991CC /* Market */ = {
 			isa = PBXGroup;
 			children = (
-				84EA204E22F8C02D004991CC /* MarketViewController.swift */,
+				846C5575235160D9002D6256 /* MarketVC */,
 				84100B982308F6A700C28F8A /* cellCV.swift */,
 				845C420723432B9300D5B38E /* waitingListCell.swift */,
 				84EA205022F91150004991CC /* MarketTableViewCell1.swift */,
@@ -447,8 +467,8 @@
 		E6C16CAA3E6A69B63C4795EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				04B159B755378D786F64C3AD /* Pods-Qreeb.debug.xcconfig */,
-				219E2D60ABBF437D6948FB12 /* Pods-Qreeb.release.xcconfig */,
+				967C9DEF5C8848127EB21C80 /* Pods-Qreeb.debug.xcconfig */,
+				6B838997553033FB35950943 /* Pods-Qreeb.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -460,11 +480,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84188E1422E92B0F004C4118 /* Build configuration list for PBXNativeTarget "Qreeb" */;
 			buildPhases = (
-				12021B688C37EB2426D43855 /* [CP] Check Pods Manifest.lock */,
+				E25EFDF17F9B070F377B65DD /* [CP] Check Pods Manifest.lock */,
 				84188DFE22E92B0B004C4118 /* Sources */,
 				84188DFF22E92B0B004C4118 /* Frameworks */,
 				84188E0022E92B0B004C4118 /* Resources */,
-				DB6F539110AB02E0554717A2 /* [CP] Embed Pods Frameworks */,
+				118335C16A9ED33C978273AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -536,7 +556,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12021B688C37EB2426D43855 /* [CP] Check Pods Manifest.lock */ = {
+		118335C16A9ED33C978273AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25EFDF17F9B070F377B65DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -558,23 +595,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB6F539110AB02E0554717A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qreeb/Pods-Qreeb-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -582,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846C557D235160D9002D6256 /* MarketViewController.swift in Sources */,
 				845C41E12341567700D5B38E /* ActiveOrderDelivery.swift in Sources */,
 				8427C04A231A42B400B3A03D /* contactInfoVC.swift in Sources */,
 				845C41E82341A99000D5B38E /* firmsNearCell.swift in Sources */,
@@ -594,10 +615,10 @@
 				845C41E42341612C00D5B38E /* ActiveOrderClient.swift in Sources */,
 				84C4A452234C1DAB00C3765A /* profileFileVC.swift in Sources */,
 				843B28EB22FBF7CC0072C045 /* notificationTableViewCell.swift in Sources */,
-				84EA204F22F8C02D004991CC /* MarketViewController.swift in Sources */,
 				84188E1822E9398A004C4118 /* Border&CornerRadius.swift in Sources */,
 				8444B53022FEFA250059A875 /* logOutViewController.swift in Sources */,
 				84E383A2230A673F00EBE84E /* DoneVC.swift in Sources */,
+				846C557A235160D9002D6256 /* MarketViewController+Network.swift in Sources */,
 				84188E1A22E94285004C4118 /* WalkthroughPageViewController.swift in Sources */,
 				84FFB981230655A600701215 /* DeletOrderVC.swift in Sources */,
 				8440B0FC2324171A004502D3 /* Task.swift in Sources */,
@@ -610,6 +631,7 @@
 				845C41F32341B97500D5B38E /* WaitingListOrdersForFirm.swift in Sources */,
 				845C42012342E3E500D5B38E /* Client.swift in Sources */,
 				845C420A23433A3600D5B38E /* MyTabBar.swift in Sources */,
+				846C557B235160D9002D6256 /* MarketViewController+CollectionView.swift in Sources */,
 				84E383A6230C2D2A00EBE84E /* RegisterPhoneVC.swift in Sources */,
 				845C420823432B9300D5B38E /* waitingListCell.swift in Sources */,
 				84C4A454234C1EB500C3765A /* UserTabInfo.swift in Sources */,
@@ -617,6 +639,7 @@
 				844C48DE22F1503C005D8BA6 /* Notifications.swift in Sources */,
 				84188E1C22E947A7004C4118 /* WalkthroughContentViewController.swift in Sources */,
 				84FFB98523066E8400701215 /* MapVC.swift in Sources */,
+				846C557F235161E6002D6256 /* MarketViewController+Map.swift in Sources */,
 				845C42062343082A00D5B38E /* logOut.swift in Sources */,
 				845C41F12341B84700D5B38E /* SingleFirmDetailsByFirmId.swift in Sources */,
 				8440B0FF23241ADD004502D3 /* API.swift in Sources */,
@@ -645,6 +668,7 @@
 				84EA205F22F9601E004991CC /* OrderTableViewCell2.swift in Sources */,
 				8458A1A823452AEB0040FCF0 /* AlertBuilder.swift in Sources */,
 				845C41EB2341B5EB00D5B38E /* FirmsNear.swift in Sources */,
+				846C557C235160D9002D6256 /* MarketViewController+TableView.swift in Sources */,
 				845C41DF2341526000D5B38E /* FinishOrderClient.swift in Sources */,
 				845C42032342EA4700D5B38E /* NotificationDeliveryCell.swift in Sources */,
 				844C48D822F13672005D8BA6 /* customerCommentsViewController.swift in Sources */,
@@ -801,7 +825,7 @@
 		};
 		84188E1522E92B0F004C4118 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B159B755378D786F64C3AD /* Pods-Qreeb.debug.xcconfig */;
+			baseConfigurationReference = 967C9DEF5C8848127EB21C80 /* Pods-Qreeb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Qreeb/Qreeb.entitlements;
@@ -824,7 +848,7 @@
 		};
 		84188E1622E92B0F004C4118 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 219E2D60ABBF437D6948FB12 /* Pods-Qreeb.release.xcconfig */;
+			baseConfigurationReference = 6B838997553033FB35950943 /* Pods-Qreeb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Qreeb/Qreeb.entitlements;
