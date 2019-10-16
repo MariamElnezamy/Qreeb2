@@ -11,7 +11,7 @@ import Foundation
 // MARK: - UserTabInfo
 struct UserTabInfo: Codable {
     let value: Bool
-    let data: DataClassUserTabInfo
+    let data: [DataClassUserTabInfo]
     let comment: String
 }
 

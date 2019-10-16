@@ -12,101 +12,103 @@ import SwiftyJSON
 
 class API: NSObject {
     
-    class func login(phone:String, completion: @escaping (_  error: Error? , _  success:Bool  )->Void) {
-        
+    class func login(phone:String, completion: @escaping (_ data: Login?, _ error: Error? , _  success:Bool  )->Void) {
         let parameters =
             [
                 "phone": phone
         ]
-        
         let url =  "http://appqreeb.com/api/auth/login"
-        
         Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil)
             .validate(statusCode : 200..<300)
-            .responseJSON { response in
-                
+            .responseData { response in
+                request(url, headers: nil)
                 switch response.result {
-                case .success(let value ) :
-                    completion(nil,true)
-                    print(value)
-                    let json = JSON(value)
-                    let isRegister = json["is_register"].boolValue
-                    print(isRegister)
-                case .failure(let error) :
-                    completion(error,false)
-                    print(error)
+                case .success(let data):
+                    do {
+                        let User = try JSONDecoder().decode(Login.self, from: data)
+                        completion(User, nil,User.value)
+                    } catch {
+                        completion(nil, error,false)
+                    }
+                case .failure(let error):
+                    completion(nil, error,false)
                 }
         }
     }
     
     
-    class func loginAsClient(name:String,phone:String,email:String,addresses: String, completion: @escaping (_  error: Error? , _  success:Bool  )->Void) {
+    class func loginAsClient(name:String,phone:String,email:String,image: String,token:String,city_id:String,lat:String,lng:String,device:String,addresse:String, completion: @escaping (_ data: RegisterClientResponse?, _ error: Error? , _  success:Bool  )->Void) {
         
         let parameters:[String : Any] = [
             "name": name
             ,"phone": phone
             ,"email": email
-            ,"addresses[]": addresses
-            ,"lat": "17.0"
-            ,"lng": "18.20"
-            ,"city_id": "1"
+            ,"image": image
+            ,"lat": lat
+            ,"lng": lng
+            ,"city_id": city_id
+            ,"device":device
+            ,"addresses[]":addresse
         ]
-        
-        
         let url =  "http://appqreeb.com/api/auth/register/client"
-        
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
-            .validate(statusCode : 200..<300)
-            .responseJSON { response in
-                
-                switch response.result {
-                case .success(let value ) :
-                    completion(nil,true)
-                    print(value)
-                    //                    let json = JSON(value)
-                    //                    let isRegister = json["is_register"].boolValue
-                //                    print(isRegister)
-                case .failure(let error) :
-                    completion(error,false)
-                    print(error)
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONNull.default, headers: nil)
+        .responseData { response in
+            request(url, headers: nil)
+            switch response.result {
+            case .success(let data):
+                do {
+                    let User = try JSONNull().decode(RegisterClientResponse.self, from: data)
+                    completion(User, nil,User.value)
+                } catch {
+                    completion(nil, error,false)
                 }
+            case .failure(let error):
+                completion(nil, error,false)
+            }
         }
     }
     
     
     
     
-    class func loginAsDelivery(name:String,phone:String,bank_no:String,account_name: String,bank_name: String, completion: @escaping (_  error: Error? , _  success:Bool  )->Void) {
-        
+    class func loginAsDelivery(name:String,phone:String,image: String,token:String,city_id:String,lat:String,lng:String,device:String,bank_name:String,account_name:String,bank_no:String,form_image:String,car_back_image:String,license_image:String,identity_image:String,  completion: @escaping (_ data: RegisterDeliveryResponse?, _ error: Error? , _  success:Bool  )->Void) {
         let parameters:[String : Any] = [
             "name" : name,
             "phone" : phone,
             "bank_no" : bank_no,
             "account_name": account_name,
             "bank_name": bank_name
+            ,"image":image
+            ,"token":token
+            ,"city_id":city_id
+            ,"lat":lat
+            ,"lng":lng
+            ,"device":device
+            ,"form_image":form_image
+            ,"car_back_image":car_back_image
+            ,"license_image":license_image
+            ,"identity_image":identity_image
         ]
-        
-        
+
         let url =  "http://appqreeb.com/api/auth/register/delivery"
-        
         Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil)
             .validate(statusCode : 200..<300)
-            .responseJSON { response in
-                
+            .responseData { response in
+                request(url, headers: nil)
                 switch response.result {
-                case .success(let value ) :
-                    completion(nil,true)
-                    print(value)
-                    //                    let json = JSON(value)
-                    //                    let isRegister = json["is_register"].boolValue
-                //                    print(isRegister)
-                case .failure(let error) :
-                    completion(error,false)
-                    print(error)
+                case .success(let data):
+                    do {
+                        let User = try JSONDecoder().decode(RegisterDeliveryResponse.self, from: data)
+                        completion(User, nil,User.value)
+                    } catch {
+                        completion(nil, error,false)
+                    }
+                case .failure(let error):
+                    completion(nil, error,false)
                 }
-                
         }
     }
+    
     
     
     class func getFirms(completionHandler: @escaping (_ data: Firms?, _ error: Error?) -> ()) {
@@ -198,7 +200,7 @@ class API: NSObject {
         }
     }
     
-    class func AllFirmsOffersClassFunc(completionHandler: @escaping (_ data:  AllFirmsOfferResponse?, _ error: Error?) -> ()) {
+    class func AllFirmsOffersClassFunc(completionHandler: @escaping (_ data:  FirmsOffer?, _ error: Error?) -> ()) {
         let url = "http://appqreeb.com/api/firms/offers/all/?lat=16.00&lng=18.00"
         let headers = [
             "X-localization": "ar",
@@ -218,7 +220,7 @@ class API: NSObject {
                 switch response.result {
                 case .success(let data):
                     do {
-                        let  allFirmsOffer = try JSONDecoder().decode( AllFirmsOfferResponse.self, from: data)
+                        let  allFirmsOffer = try JSONDecoder().decode( FirmsOffer.self, from: data)
                         completionHandler(allFirmsOffer, nil)
                     } catch {
                         completionHandler(nil, error)
@@ -228,7 +230,7 @@ class API: NSObject {
                 }
         }
     }
-    
+
     class func SingleFirmDetailsByFirmIdClassFunc(completionHandler: @escaping (_ data: DetailsByFirmID?, _ error: Error?) -> ()) {
         let url = "http://appqreeb.com/api/firms/single/3/?lat=16.00&lng=18.00"
         let headers = [
@@ -261,19 +263,19 @@ class API: NSObject {
         }
     }
     
-    class func tWaitingListOrdersForFirmClassFunc(completionHandler: @escaping (_ data: WaitingListOrdersForFirm?, _ error: Error?) -> ()) {
+    class func tWaitingListOrdersForFirmClassFunc(completionHandler: @escaping (_ data: WaitingList?, _ error: Error?) -> ()) {
         let url = "http://appqreeb.com/api/orders/waiting_orders/3"
         let headers = [
-            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU0MDM4MDY5OSwiZXhwIjoxNTQxNTkwMjk5LCJuYmYiOjE1NDAzODA2OTksImp0aSI6IjRnWm9DT3p2TGszcnNodlQiLCJzdWIiOjE4LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5zHabPiDvuL4APseMdVN4ExA2Oh-Sk9nQXxVMhxUqFI,Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU2NTcyODk2MSwibmJmIjoxNTY1NzI4OTYxLCJqdGkiOiJuN0I4QXdHYTZRRGNxOHVrIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.cxJB8pGhdHmbcjAOTeabScxqiw3NtWMk-_C5mKnlRnw"
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU0MDM4MDY5OSwiZXhwIjoxNTQxNTkwMjk5LCJuYmYiOjE1NDAzODA2OTksImp0aSI6IjRnWm9DT3p2TGszcnNodlQiLCJzdWIiOjE4LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5zHabPiDvuL4APseMdVN4ExA2Oh-Sk9nQXxVMhxUqFI"
         ]
         
         request(url, headers: headers)
-            .validate(statusCode: 200 ..< 300)
+//            .validate(statusCode: 200 ..< 300)
             .responseData { response in
                 switch response.result {
                 case .success(let data):
                     do {
-                        let waitingListOrdersForFirm = try JSONDecoder().decode(WaitingListOrdersForFirm.self, from: data)
+                        let waitingListOrdersForFirm = try JSONDecoder().decode(WaitingList.self, from: data)
                         completionHandler(waitingListOrdersForFirm, nil)
                     } catch {
                         completionHandler(nil, error)
@@ -460,38 +462,38 @@ class API: NSObject {
     }
     
     
-//    class func NotiDeliveryClassFunc(completionHandler: @escaping (_ data: Delivery?, _ error: Error?) -> ()) {
-//        let url = "http://appqreeb.com/api/user/notifications/delivery"
-//        let headers = [
-//            "X-localization": "ar",
-//            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU2Njk0MTU2NSwibmJmIjoxNTY2OTQxNTY1LCJqdGkiOiJZV054bU5JRnY4VDZOaTFwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.PRlgROR7yflnFFnOCXftT_Hao_kMuvyO6juZE0C3vcs",
-//            "User-Agent": "PostmanRuntime/7.15.2",
-//            "Accept": "*/*",
-//            "Cache-Control": "no-cache",
-//            "Postman-Token": "ba6c5444-a956-4e86-80b7-84e8222aee38,af7d9f90-3193-42b1-a274-fb46f401449b",
-//            "Host": "appqreeb.com",
-//            "Accept-Encoding": "gzip, deflate",
-//            "Connection": "keep-alive",
-//            "cache-control": "no-cache"
-//        ]
-//
-//        request(url, headers: headers)
-//            .validate(statusCode: 200 ..< 300)
-//            .responseData { response in
-//                switch response.result {
-//                case .success(let data):
-//                    do {
-//                        let delivery = try JSONDecoder().decode(Delivery.self, from: data)
-//                        completionHandler(delivery, nil)
-//                    } catch {
-//                        completionHandler(nil, error)
-//                    }
-//                case .failure(let error):
-//                    completionHandler(nil, error)
-//                }
-//        }
-  //  }
-    
+    class func NotiDeliveryClassFunc(completionHandler: @escaping (_ data: Delivery?, _ error: Error?) -> ()) {
+        let url = "http://appqreeb.com/api/user/notifications/delivery"
+        let headers = [
+            "X-localization": "ar",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU2Njk0MTU2NSwibmJmIjoxNTY2OTQxNTY1LCJqdGkiOiJZV054bU5JRnY4VDZOaTFwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.PRlgROR7yflnFFnOCXftT_Hao_kMuvyO6juZE0C3vcs",
+            "User-Agent": "PostmanRuntime/7.15.2",
+            "Accept": "*/*",
+            "Cache-Control": "no-cache",
+            "Postman-Token": "ba6c5444-a956-4e86-80b7-84e8222aee38,af7d9f90-3193-42b1-a274-fb46f401449b",
+            "Host": "appqreeb.com",
+            "Accept-Encoding": "gzip, deflate",
+            "Connection": "keep-alive",
+            "cache-control": "no-cache"
+        ]
+
+        request(url, headers: headers)
+            .validate(statusCode: 200 ..< 300)
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let delivery = try JSONDecoder().decode(Delivery.self, from: data)
+                        completionHandler(delivery, nil)
+                    } catch {
+                        completionHandler(nil, error)
+                    }
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
+        }
+    }
+
     class func NotiClientClassFunc(completionHandler: @escaping (_ data: Client?, _ error: Error?) -> ()) {
         let url = "http://appqreeb.com/api/user/notifications/user"
         let headers = [
@@ -624,10 +626,11 @@ class API: NSObject {
         }
     }
     
-    class func ClientsCommentClassFunc(completionHandler: @escaping (_ data: ClientComment?, _ error: Error?) -> ()) {
+    class func ClientsCommentClassFunc(completionHandler: @escaping (_ data: ClientsComment?, _ error: Error?) -> ()) {
         let url = "http://appqreeb.com/api/user/client_rates"
         let headers = [
-            "Authorization": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU0MDM4MDY5OSwiZXhwIjoxNTQxNTkwMjk5LCJuYmYiOjE1NDAzODA2OTksImp0aSI6IjRnWm9DT3p2TGszcnNodlQiLCJzdWIiOjE4LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5zHabPiDvuL4APseMdVN4ExA2Oh-Sk9nQXxVMhxUqFI,Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU2Njk0MTU2NSwibmJmIjoxNTY2OTQxNTY1LCJqdGkiOiJZV054bU5JRnY4VDZOaTFwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.PRlgROR7yflnFFnOCXftT_Hao_kMuvyO6juZE0C3vcs",
+            "Authorization": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU0MDM4MDY5OSwiZXhwIjoxNTQxNTkwMjk5LCJuYmYiOjE1NDAzODA2OTksImp0aSI6IjRnWm9DT3p2TGszcnNodlQiLCJzdWIiOjE4LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5zHabPiDvuL4APseMdVN4ExA2Oh-Sk9nQXxVMhxUqFI"
+            ,
             "User-Agent": "PostmanRuntime/7.15.2",
             "Accept": "*/*",
             "Cache-Control": "no-cache",
@@ -637,14 +640,14 @@ class API: NSObject {
             "Connection": "keep-alive",
             "cache-control": "no-cache"
         ]
-        
+
         request(url, headers: headers)
             .validate(statusCode: 200 ..< 300)
             .responseData { response in
                 switch response.result {
                 case .success(let data):
                     do {
-                        let clientComment = try JSONDecoder().decode(ClientComment.self, from: data)
+                        let clientComment = try JSONDecoder().decode(ClientsComment.self, from: data)
                         completionHandler(clientComment, nil)
                     } catch {
                         completionHandler(nil, error)
@@ -711,6 +714,37 @@ class API: NSObject {
                 case .success(let data):
                     do {
                         let profileFile = try JSONDecoder().decode(UserTabInfo.self, from: data)
+                        completionHandler(profileFile, nil)
+                    } catch {
+                        completionHandler(nil, error)
+                    }
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
+        }
+    }
+    
+    
+    class func logOutClassFunc(completionHandler: @escaping (_ data: LogOut?, _ error: Error?) -> ()) {
+        let url = "http://appqreeb.com/api/user/logout"
+        let headers = [
+            "Authorization": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTU0MDM4MDY5OSwiZXhwIjoxNTQxNTkwMjk5LCJuYmYiOjE1NDAzODA2OTksImp0aSI6IjRnWm9DT3p2TGszcnNodlQiLCJzdWIiOjE4LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5zHabPiDvuL4APseMdVN4ExA2Oh-Sk9nQXxVMhxUqFI",
+            "User-Agent": "PostmanRuntime/7.15.2",
+            "Accept": "*/*",
+            "Cache-Control": "no-cache",
+            "Postman-Token": "be3d7aae-c911-4f4b-aed7-593c3aa62541,c4b84c27-8c87-4a33-b2b0-74957db36491",
+            "Host": "appqreeb.com",
+            "Accept-Encoding": "gzip, deflate",
+            "Connection": "keep-alive",
+            "cache-control": "no-cache"
+        ]
+        request(url, headers: headers)
+            .validate(statusCode: 200 ..< 300)
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let profileFile = try JSONDecoder().decode(LogOut.self, from: data)
                         completionHandler(profileFile, nil)
                     } catch {
                         completionHandler(nil, error)

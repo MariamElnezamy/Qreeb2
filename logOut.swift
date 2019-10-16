@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+// MARK: - LogOut
+struct LogOut: Codable {
+    let value: Bool
+    let data, comment: String
+}

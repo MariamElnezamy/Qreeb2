@@ -8,35 +8,6 @@
 
 import Foundation
 
-
-//// MARK: - Welcome
-//struct DetailsByFirmId: Codable {
-//    let value: Bool
-//    let dataDetailsByFirmId: DataClassDetailsByFirmId
-//    let comment: String
-//}
-//
-//// MARK: - DataClass
-//struct DataClassDetailsByFirmId: Codable {
-//    let id: Int
-//    let name: String
-//    let fromYou: Double
-//    let image: String
-//    let lat, lng: String
-//    let availableDeliveries: Int
-//    let dataDescription, openedFrom, openedTo: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id, name
-//        case fromYou
-//        case image, lat, lng
-//        case availableDeliveries
-//        case dataDescription
-//        case openedFrom
-//        case openedTo
-//    }
-//}
-
 // MARK: - DetailsByFirmID
 struct DetailsByFirmID: Codable {
     let value: Bool

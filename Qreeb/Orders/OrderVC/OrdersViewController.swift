@@ -20,23 +20,17 @@ class OrdersViewController: UIViewController,UITableViewDelegate,UITableViewData
     @IBOutlet var tableView1: UITableView!
     @IBOutlet var tableView2: UITableView!
     @IBOutlet var finishDeliveryTableVieww: UITableView!
-    
-    
+    @IBOutlet var Button:UIButton!
     @IBOutlet var activeViewUser: UIView!
     @IBOutlet var view1: UIView!
     @IBOutlet var view2: UIView!
     @IBOutlet var finishViewDelivery: UIView!
-    
-    
     @IBOutlet var btn1: UIButton!
     @IBOutlet var btn2: UIButton!
-    
     @IBOutlet var UserView: UIView!
     @IBOutlet var DeliveryView: UIView!
-    
     @IBOutlet var HeightDeliveryView: NSLayoutConstraint!
     @IBOutlet var HeightUserView: NSLayoutConstraint!
-    
     var isViewVisiableUser = false
     var isViewVisiableDelivery = false
 
@@ -71,7 +65,6 @@ class OrdersViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
     }
     
-    @IBOutlet var Button:UIButton!
     
     
          func ActiveOrderUserFunc(){
